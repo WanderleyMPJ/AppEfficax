@@ -1,0 +1,90 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 537
+  ClientWidth = 755
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lytConteiner: TLayout
+    Align = Client
+    Size.Width = 755.000000000000000000
+    Size.Height = 537.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object tbMenu: TToolBar
+      Size.Width = 755.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object spbMenu: TSpeedButton
+        Align = Left
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'detailstoolbutton'
+        Text = 'spbMenu'
+      end
+      object spbExit: TSpeedButton
+        Align = Right
+        Position.X = 675.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'escapetoolbuttonbordered'
+        Text = 'spbExit'
+      end
+    end
+  end
+  object MultiView1: TMultiView
+    Mode = Drawer
+    Size.Width = 250.000000000000000000
+    Size.Height = 537.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 250.000000000000000000
+      Size.Height = 537.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      ItemHeight = 40.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 537.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        TextSettings.Font.Size = 15.000000000000000000
+        StyledSettings = [Family, Style, FontColor, Other]
+        ItemData.Accessory = aMore
+        Size.Width = 246.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Pessoa'
+      end
+      object ListBoxHeader1: TListBoxHeader
+        Size.Width = 246.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Size.Width = 246.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Cadastro'
+          TabOrder = 0
+        end
+      end
+    end
+  end
+end
