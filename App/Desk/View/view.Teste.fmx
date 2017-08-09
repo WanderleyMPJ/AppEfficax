@@ -4,6 +4,7 @@ object Form4: TForm4
   Caption = 'Form4'
   ClientHeight = 480
   ClientWidth = 640
+  StyleBook = Form1.StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
