@@ -15,7 +15,6 @@ type
     tbcDadosAdd: TTabControl;
     tbiDoc: TTabItem;
     tbiEnd: TTabItem;
-    tbiCont: TTabItem;
     ListBoxItem1: TListBoxItem;
     ListBoxItem2: TListBoxItem;
     ListBoxItem3: TListBoxItem;
@@ -30,12 +29,6 @@ type
     ListBoxItem10: TListBoxItem;
     ListBoxItem12: TListBoxItem;
     ListBoxHeader3: TListBoxHeader;
-    ListBox4: TListBox;
-    lbiDescCont: TListBoxItem;
-    ListBoxItem14: TListBoxItem;
-    ListBoxItem15: TListBoxItem;
-    ListBoxItem16: TListBoxItem;
-    ListBoxHeader4: TListBoxHeader;
     ListBoxHeader2: TListBoxHeader;
     lbPessoaFisica: TLabel;
     lbRSNM: TLabel;
@@ -59,16 +52,9 @@ type
     Label12: TLabel;
     Edit12: TEdit;
     Label14: TLabel;
-    Edit13: TEdit;
-    Label15: TLabel;
-    Edit14: TEdit;
-    Label16: TLabel;
-    Edit16: TEdit;
-    Label18: TLabel;
     spbEnd: TSpeedButton;
     spbCont: TSpeedButton;
     spbDoc: TSpeedButton;
-    spbEnde: TSpeedButton;
     ListBoxHeader1: TListBoxHeader;
     ListBoxItem17: TListBoxItem;
     Label19: TLabel;
@@ -77,15 +63,8 @@ type
     Edit18: TEdit;
     Label13: TLabel;
     Edit11: TEdit;
-    Label17: TLabel;
-    Edit15: TEdit;
-    Label21: TLabel;
-    Edit19: TEdit;
-    Label22: TLabel;
-    Edit20: TEdit;
     Label23: TLabel;
     Label24: TLabel;
-    Label25: TLabel;
     ctaDocumentos: TChangeTabAction;
     ctaEndereco: TChangeTabAction;
     ctaContato: TChangeTabAction;
@@ -96,15 +75,40 @@ type
     Label4: TLabel;
     Edit22: TEdit;
     ListBoxItem6: TListBoxItem;
-    ListBoxItem11: TListBoxItem;
-    CornerButton1: TCornerButton;
     CornerButton2: TCornerButton;
-    lbghEndCad: TListBoxGroupHeader;
-    Label5: TLabel;
-    lbghContCad: TListBoxGroupHeader;
-    Label6: TLabel;
-    lvEnderecos: TListView;
-    lvContatos: TListView;
+    tbiCont: TTabItem;
+    Contatos: TListBox;
+    ListBoxHeader5: TListBoxHeader;
+    Label7: TLabel;
+    lbiNumTel: TListBoxItem;
+    Edit23: TEdit;
+    Label8: TLabel;
+    Label9: TLabel;
+    Edit24: TEdit;
+    lbiDescTel: TListBoxItem;
+    Edit25: TEdit;
+    Label10: TLabel;
+    lbiTelefones: TListBoxItem;
+    lvTelefones: TListView;
+    lbiEmail: TListBoxItem;
+    lbiCEmail: TListBoxItem;
+    Edit26: TEdit;
+    Label27: TLabel;
+    lbiDescEmail: TListBoxItem;
+    Edit28: TEdit;
+    Label29: TLabel;
+    CornerButton4: TCornerButton;
+    lvEmail: TListView;
+    CornerButton3: TCornerButton;
+    spbEnde: TSpeedButton;
+    Telefones: TListBoxItem;
+    ListBoxItem13: TListBoxItem;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    lbtelefones: TLabel;
+    lbEmail: TLabel;
+    spbTel: TSpeedButton;
+    spbEmail: TSpeedButton;
     procedure spbEndClick(Sender: TObject);
     procedure spbEndeClick(Sender: TObject);
     procedure spbDocClick(Sender: TObject);
@@ -112,8 +116,9 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Switch1Switch(Sender: TObject);
     procedure swPesFisicaClick(Sender: TObject);
-    procedure CornerButton2Click(Sender: TObject);
     procedure CornerButton1Click(Sender: TObject);
+    procedure Panel2Click(Sender: TObject);
+    procedure Panel1Click(Sender: TObject);
   private
     { Private declarations }
     procedure VerificaTipo(Tp : integer);
@@ -131,15 +136,7 @@ implementation
 procedure TfrmCadPessoa.CornerButton1Click(Sender: TObject);
 begin
   inherited;
-  lbghContCad.Visible := True;
-  lvContatos.Visible := True;
-end;
-
-procedure TfrmCadPessoa.CornerButton2Click(Sender: TObject);
-begin
-  inherited;
-  lbghEndCad.Visible := True;
-  lvEnderecos.Visible := True;
+  lbiTelefones.Visible := True;
 end;
 
 procedure TfrmCadPessoa.FormCreate(Sender: TObject);
@@ -147,6 +144,48 @@ begin
   inherited;
   tbcDadosAdd.TabPosition := TTabPosition.None;
   tbcDadosAdd.ActiveTab := tbiDoc;
+end;
+
+procedure TfrmCadPessoa.Panel1Click(Sender: TObject);
+begin
+  inherited;
+  if spbTel.StyleLookup = 'arrowlefttoolbutton' then
+  begin
+    lbitelefones.Visible := False;
+    lbiDescTel.Visible := False;
+    lbiNumTel.Visible := False;
+    spbTel.StyleLookup := 'arrowdowntoolbuttonborderedright';
+  end
+  else
+  if spbTel.StyleLookup = 'arrowdowntoolbuttonborderedright' then
+  begin
+   lbiTelefones.Visible := true;
+   lbiDescTel.Visible := true;
+   lbiNumTel.Visible := true;
+   spbtel.StyleLookup := 'arrowlefttoolbutton';
+  end;
+
+end;
+
+procedure TfrmCadPessoa.Panel2Click(Sender: TObject);
+begin
+  inherited;
+  if spbEmail.StyleLookup = 'arrowlefttoolbutton' then
+  begin
+    lbiEmail.Visible := False;
+    lbiDescEmail.Visible := False;
+    lbiCEmail.Visible := False;
+    spbEmail.StyleLookup := 'arrowdowntoolbuttonborderedright';
+  end
+  else
+  if spbEmail.StyleLookup = 'arrowdowntoolbuttonborderedright' then
+  begin
+   lbiEmail.Visible := true;
+   lbiDescEmail.Visible := true;
+   lbiCEmail.Visible := true;
+   spbEmail.StyleLookup := 'arrowlefttoolbutton';
+  end;
+
 end;
 
 procedure TfrmCadPessoa.spbContClick(Sender: TObject);
@@ -201,7 +240,6 @@ begin
   lbIERG.Text := 'Inscrição Estadual:';
   lbIMTE.Text := 'Inscrição Municipal:';
   lbiOGUF.Visible := False;
-  lbiDescCont.Visible := True;
 end
 else
 //Pessoa Física
@@ -215,7 +253,6 @@ begin
   lbIERG.Text := 'RG:';
   lbIMTE.Text := 'Título de Eleitor:';
   lbiOGUF.Visible := True;
-  lbiDescCont.Visible := False;
 end;
 
 

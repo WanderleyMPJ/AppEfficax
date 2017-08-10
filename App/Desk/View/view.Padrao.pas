@@ -47,6 +47,7 @@ type
   private
     { Private declarations }
     procedure VerificaOperacao(I: integer);
+    procedure AlterEdt(b : boolean);
   public
     { Public declarations }
   end;
@@ -59,6 +60,19 @@ implementation
 {$R *.fmx}
 
 { TForm1 }
+
+procedure TfrmCadPadrao.AlterEdt(b : boolean);
+var
+I : integer;
+begin
+for I := 0 to Self.ComponentCount -1 do
+begin
+if (Self.Components[i] is TEdit) then
+(Self.Components[i] as TEdit).Enabled := b
+else if (Self.Components[i] is TSwitch) then
+ (Self.Components[i] as TSwitch).Enabled := b;
+end;
+end;
 
 procedure TfrmCadPadrao.FormCreate(Sender: TObject);
 begin
@@ -106,8 +120,7 @@ end;
 
 procedure TfrmCadPadrao.spbSalvClick(Sender: TObject);
 begin
- VerificaOperacao(1);
- ctaLista.Execute;
+ VerificaOperacao(4);
 end;
 
 procedure TfrmCadPadrao.VerificaOperacao(I: integer);
@@ -122,6 +135,7 @@ if I = 1 then
    spbSalv.Visible := false;
    spbBack.Visible := false;
    spbMenu.Visible := True;
+   AlterEdt(False);
   end
 //Editando
   else
@@ -134,6 +148,7 @@ if I = 1 then
       spbSalv.Visible := true;
       spbBack.Visible := true;
       spbMenu.Visible := False;
+      AlterEdt(True);
     end
 //Incluindo
     else
@@ -146,7 +161,21 @@ if I = 1 then
         spbSalv.Visible := true;
         spbBack.Visible := true;
         spbMenu.Visible := False;
-      end;
+        AlterEdt(True);
+      end
+//Salvo
+     else
+      if I = 4 then
+       begin
+        spbAdd.Visible := true;
+        spbExc.Visible := true;
+        spbEdt.Visible := true;
+        spbCanc.Visible := false;
+        spbSalv.Visible := false;
+        spbBack.Visible := true;
+        spbMenu.Visible := False;
+        AlterEdt(false);
+       end;
 end;
 
 end.
