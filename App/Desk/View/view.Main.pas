@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Controls.Presentation, FMX.MultiView, FMX.Layouts, FMX.ListBox,
-  view.Padrao, view.Cad.Pessoa;
+  view.Padrao, view.Cad.Pessoa, view.Cad.User;
 
 type
   TfrmMain = class(TForm)
@@ -21,9 +21,11 @@ type
     Label1: TLabel;
     StyleBook1: TStyleBook;
     ListBoxItem2: TListBoxItem;
+    ListBoxItem3: TListBoxItem;
     procedure ListBoxItem1Click(Sender: TObject);
     procedure spbExitClick(Sender: TObject);
     procedure ListBoxItem2Click(Sender: TObject);
+    procedure ListBoxItem3Click(Sender: TObject);
   private
     { Private declarations }
     FActiveForm : TForm;
@@ -79,6 +81,11 @@ procedure TfrmMain.ListBoxItem2Click(Sender: TObject);
 begin
  close;
  free;
+end;
+
+procedure TfrmMain.ListBoxItem3Click(Sender: TObject);
+begin
+  AbreForm(TfrmCadUser);
 end;
 
 procedure TfrmMain.spbExitClick(Sender: TObject);

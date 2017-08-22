@@ -1,0 +1,315 @@
+inherited frmCadUser: TfrmCadUser
+  Caption = 'frmCadPadrao1'
+  ClientHeight = 516
+  ClientWidth = 779
+  DesignerMasterStyle = 0
+  inherited lytBase: TLayout
+    Size.Width = 779.000000000000000000
+    Size.Height = 516.000000000000000000
+    inherited ToolBar1: TToolBar
+      Size.Width = 779.000000000000000000
+      inherited lbTitulo: TLabel
+        Size.Width = 779.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Cadastro de Usu'#225'rio'
+      end
+      inherited spbAdd: TSpeedButton
+        Position.X = 603.000000000000000000
+      end
+      inherited spbEdt: TSpeedButton
+        Position.X = 651.000000000000000000
+      end
+      inherited spbCanc: TSpeedButton
+        Position.X = 507.000000000000000000
+      end
+      inherited spbExc: TSpeedButton
+        Position.X = 555.000000000000000000
+      end
+      inherited spbSalv: TSpeedButton
+        Position.X = 699.000000000000000000
+      end
+    end
+    inherited TabControl1: TTabControl
+      Size.Width = 779.000000000000000000
+      Size.Height = 470.000000000000000000
+      Sizes = (
+        779s
+        470s
+        779s
+        470s)
+      inherited tbiLista: TTabItem
+        ExplicitSize.cx = 12.000000000000000000
+        ExplicitSize.cy = 12.000000000000000000
+        inherited ToolBar2: TToolBar
+          Size.Width = 779.000000000000000000
+          inherited ComboBox1: TComboBox
+            Position.Y = 7.000000000000000000
+            Size.Height = 32.000000000000000000
+          end
+          inherited Edit1: TEdit
+            Size.Width = 389.000000000000000000
+            Size.Height = 32.000000000000000000
+          end
+          inherited SpeedButton7: TSpeedButton
+            Position.X = 723.000000000000000000
+            Size.Height = 46.000000000000000000
+          end
+        end
+        inherited ListView1: TListView
+          Size.Width = 759.000000000000000000
+          Size.Height = 404.000000000000000000
+        end
+      end
+      inherited tbiFormulario: TTabItem
+        ExplicitSize.cx = 12.000000000000000000
+        ExplicitSize.cy = 12.000000000000000000
+        inherited lytFormulario: TLayout
+          Size.Width = 779.000000000000000000
+          Size.Height = 470.000000000000000000
+          object CalloutPanel1: TCalloutPanel
+            Align = Center
+            Padding.Top = 11.000000000000000000
+            Size.Width = 381.000000000000000000
+            Size.Height = 263.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            CalloutWidth = 23.000000000000000000
+            CalloutLength = 11.000000000000000000
+            object lbDdBasicos: TListBox
+              Align = Client
+              Size.Width = 381.000000000000000000
+              Size.Height = 252.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'transparentlistboxstyle'
+              TabOrder = 0
+              DisableFocusEffect = True
+              ItemHeight = 40.000000000000000000
+              DefaultItemStyles.ItemStyle = ''
+              DefaultItemStyles.GroupHeaderStyle = ''
+              DefaultItemStyles.GroupFooterStyle = ''
+              Viewport.Width = 381.000000000000000000
+              Viewport.Height = 206.000000000000000000
+              object ListBoxItem1: TListBoxItem
+                Size.Width = 381.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object lbPessoa: TLabel
+                  Align = Left
+                  AutoSize = True
+                  Margins.Left = 10.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Position.X = 10.000000000000000000
+                  Size.Width = 52.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Pessoa:'
+                  TabOrder = 0
+                end
+                object Edit2: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  TabOrder = 1
+                  Margins.Top = 4.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Size.Width = 299.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                  object sebPessoa: TSearchEditButton
+                    CanFocus = False
+                    Cursor = crArrow
+                    Size.Width = 28.000000000000000000
+                    Size.Height = 28.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnClick = sebPessoaClick
+                  end
+                end
+              end
+              object ListBoxItem2: TListBoxItem
+                Position.Y = 40.000000000000000000
+                Size.Width = 381.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                object lbLogin: TLabel
+                  Align = Left
+                  AutoSize = True
+                  Margins.Left = 10.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Position.X = 10.000000000000000000
+                  Size.Width = 43.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Login:'
+                  TabOrder = 0
+                end
+                object Edit3: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  TabOrder = 1
+                  Margins.Top = 4.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Size.Width = 308.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+              object ListBoxItem3: TListBoxItem
+                Position.Y = 80.000000000000000000
+                Size.Width = 381.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object lbSenha: TLabel
+                  Align = Left
+                  AutoSize = True
+                  Margins.Left = 10.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Position.X = 10.000000000000000000
+                  Size.Width = 47.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Senha:'
+                  TabOrder = 0
+                end
+                object edtSenha: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Left
+                  TabOrder = 1
+                  Password = True
+                  Position.X = 67.000000000000000000
+                  Position.Y = 4.000000000000000000
+                  Size.Width = 239.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                  object pebVerSenha: TPasswordEditButton
+                    CanFocus = False
+                    Cursor = crArrow
+                    Size.Width = 28.000000000000000000
+                    Size.Height = 28.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnMouseEnter = pebVerSenhaMouseEnter
+                    OnMouseLeave = pebVerSenhaMouseLeave
+                  end
+                end
+              end
+              object ListBoxItem4: TListBoxItem
+                Position.Y = 120.000000000000000000
+                Size.Width = 381.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                object lbCSenha: TLabel
+                  Align = Left
+                  AutoSize = True
+                  Margins.Left = 10.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Position.X = 10.000000000000000000
+                  Size.Width = 122.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Confirmar Senha:'
+                  TabOrder = 0
+                end
+                object edtCSenha: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  TabOrder = 1
+                  Password = True
+                  Margins.Top = 4.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Size.Width = 229.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                  object pebVerCSenha: TPasswordEditButton
+                    CanFocus = False
+                    Cursor = crArrow
+                    Size.Width = 28.000000000000000000
+                    Size.Height = 28.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnMouseEnter = pebVerCSenhaMouseEnter
+                    OnMouseLeave = pebVerCSenhaMouseLeave
+                  end
+                end
+              end
+              object ListBoxItem5: TListBoxItem
+                Position.Y = 160.000000000000000000
+                Size.Width = 381.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 4
+                object lbGrupo: TLabel
+                  Align = Left
+                  AutoSize = True
+                  Margins.Left = 10.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Position.X = 10.000000000000000000
+                  Size.Width = 48.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Grupo:'
+                  TabOrder = 0
+                end
+                object Edit6: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  TabOrder = 1
+                  Margins.Top = 4.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Size.Width = 303.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                  object sebGrupo: TSearchEditButton
+                    CanFocus = False
+                    Cursor = crArrow
+                    Size.Width = 28.000000000000000000
+                    Size.Height = 28.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnClick = sebGrupoClick
+                  end
+                end
+              end
+              object ListBoxHeader1: TListBoxHeader
+                Size.Width = 381.000000000000000000
+                Size.Height = 46.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Label1: TLabel
+                  Align = Contents
+                  Size.Width = 381.000000000000000000
+                  Size.Height = 46.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.HorzAlign = Center
+                  Text = 'Dados B'#225'sicos'
+                  TabOrder = 0
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    inherited ppBusca: TPopup
+      Placement = Center
+      Size.Width = 536.000000000000000000
+      Size.Height = 425.000000000000000000
+      inherited lytCBusca: TLayout
+        Size.Width = 532.000000000000000000
+        Size.Height = 421.000000000000000000
+      end
+    end
+  end
+  inherited ActionList1: TActionList
+    Left = 664
+    Top = 88
+  end
+end

@@ -1,3 +1,4 @@
+
 unit view.Padrao;
 
 interface
@@ -7,7 +8,8 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
   FMX.Edit, FMX.ListBox, FMX.StdCtrls, FMX.ListView, FMX.TabControl,
-  FMX.Controls.Presentation, FMX.Layouts, System.Actions, FMX.ActnList;
+  FMX.Controls.Presentation, FMX.Layouts, System.Actions, FMX.ActnList,
+  view.Busca, FMX.Objects;
 
 type
   TfrmCadPadrao = class(TForm)
@@ -35,6 +37,10 @@ type
     ActionList1: TActionList;
     ctaFormulario: TChangeTabAction;
     ctaLista: TChangeTabAction;
+    lytFormulario: TLayout;
+    ppBusca: TPopup;
+    lytCBusca: TLayout;
+    recPopUp: TRectangle;
     procedure ListView1ItemClick(const Sender: TObject;
       const AItem: TListViewItem);
     procedure spbEdtClick(Sender: TObject);
@@ -44,12 +50,15 @@ type
     procedure spbCancClick(Sender: TObject);
     procedure spbExcClick(Sender: TObject);
     procedure spbBackClick(Sender: TObject);
+    procedure recPopUpClick(Sender: TObject);
   private
     { Private declarations }
     procedure VerificaOperacao(I: integer);
     procedure AlterEdt(b : boolean);
   public
     { Public declarations }
+    FActiveForm : TForm;
+    procedure ChamaBusca;
   end;
 
 var
@@ -57,9 +66,37 @@ var
 
 implementation
 
+uses
+  Winapi.Windows;
+
 {$R *.fmx}
 
 { TForm1 }
+
+procedure TfrmCadPadrao.ChamaBusca;
+var
+ lytBase: TComponent;
+begin
+ if Assigned(FActiveForm) then
+ begin
+   if FActiveForm.ClassType = TfrmBusca then
+   exit
+   else
+   begin
+     FActiveForm.DisposeOf;
+     FActiveForm := nil;
+   end;
+ end;
+ Application.CreateForm(TfrmBusca, FActiveForm);
+ lytBase := FActiveForm.FindComponent('lytBase');
+ if Assigned(lytBase) then
+ lytCBusca.AddObject(TLayout(lytBase));
+
+  recPopUp.Visible := True;
+  recPopUp.Align := TAlignLayout.Contents;
+  ppBusca.BringToFront;
+  ppBusca.visible := True;
+end;
 
 procedure TfrmCadPadrao.AlterEdt(b : boolean);
 var
@@ -80,10 +117,19 @@ begin
  ctaLista.Execute;
 end;
 
+
 procedure TfrmCadPadrao.ListView1ItemClick(const Sender: TObject;
   const AItem: TListViewItem);
 begin
  ctaFormulario.Execute;
+end;
+
+procedure TfrmCadPadrao.recPopUpClick(Sender: TObject);
+begin
+  ppBusca.Visible := false;
+  recPopUp.Visible := False;
+  FActiveForm.DisposeOf;
+  FActiveForm := nil;
 end;
 
 procedure TfrmCadPadrao.spbAddClick(Sender: TObject);

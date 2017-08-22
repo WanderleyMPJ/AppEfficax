@@ -7,7 +7,8 @@ uses
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
   view.Padrao, FMX.ListView.Types, FMX.ListView.Appearances,
   FMX.ListView.Adapters.Base, System.Actions, FMX.ActnList, FMX.TabControl,
-  FMX.ListView, FMX.Edit, FMX.ListBox, FMX.Controls.Presentation, FMX.Layouts;
+  FMX.ListView, FMX.Edit, FMX.ListBox, FMX.Controls.Presentation, FMX.Layouts,
+  FMX.Objects;
 
 type
   TfrmCadPessoa = class(TfrmCadPadrao)

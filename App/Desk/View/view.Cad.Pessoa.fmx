@@ -1,1075 +1,1077 @@
 inherited frmCadPessoa: TfrmCadPessoa
   Caption = 'frmCadPadrao1'
   ClientHeight = 699
-  ClientWidth = 783
+  ClientWidth = 790
   DesignerMasterStyle = 0
   inherited lytBase: TLayout
-    Size.Width = 783.000000000000000000
+    Size.Width = 790.000000000000000000
     Size.Height = 699.000000000000000000
     inherited ToolBar1: TToolBar
-      Size.Width = 783.000000000000000000
+      Size.Width = 790.000000000000000000
       inherited lbTitulo: TLabel
-        Size.Width = 783.000000000000000000
+        Size.Width = 790.000000000000000000
         TextSettings.Font.StyleExt = {00070000000000000004000000}
         Text = 'Cadastro de Pessoa'
       end
       inherited spbAdd: TSpeedButton
-        Position.X = 607.000000000000000000
+        Position.X = 614.000000000000000000
       end
       inherited spbEdt: TSpeedButton
-        Position.X = 655.000000000000000000
+        Position.X = 662.000000000000000000
       end
       inherited spbCanc: TSpeedButton
-        Position.X = 511.000000000000000000
+        Position.X = 518.000000000000000000
       end
       inherited spbExc: TSpeedButton
-        Position.X = 559.000000000000000000
+        Position.X = 566.000000000000000000
       end
       inherited spbSalv: TSpeedButton
-        Position.X = 703.000000000000000000
+        Position.X = 710.000000000000000000
       end
     end
     inherited TabControl1: TTabControl
-      Size.Width = 783.000000000000000000
+      Size.Width = 790.000000000000000000
       Size.Height = 653.000000000000000000
-      TabIndex = 1
       Sizes = (
-        783s
+        790s
         653s
-        783s
+        790s
         653s)
       inherited tbiLista: TTabItem
-        IsSelected = False
         ExplicitSize.cx = 12.000000000000000000
         ExplicitSize.cy = 12.000000000000000000
         inherited ToolBar2: TToolBar
-          Size.Width = 783.000000000000000000
+          Size.Width = 790.000000000000000000
+          inherited ComboBox1: TComboBox
+            Position.Y = 7.000000000000000000
+            Size.Height = 32.000000000000000000
+          end
           inherited Edit1: TEdit
-            Size.Width = 393.000000000000000000
+            Size.Width = 400.000000000000000000
+            Size.Height = 32.000000000000000000
           end
           inherited SpeedButton7: TSpeedButton
-            Position.X = 727.000000000000000000
+            Position.X = 734.000000000000000000
+            Size.Height = 46.000000000000000000
           end
         end
         inherited ListView1: TListView
-          Size.Width = 763.000000000000000000
+          Size.Width = 770.000000000000000000
           Size.Height = 587.000000000000000000
         end
       end
       inherited tbiFormulario: TTabItem
-        IsSelected = True
         ExplicitSize.cx = 12.000000000000000000
         ExplicitSize.cy = 12.000000000000000000
-        object ListBox1: TListBox
-          Align = Top
-          Margins.Top = 10.000000000000000000
-          Position.Y = 10.000000000000000000
-          Size.Width = 783.000000000000000000
-          Size.Height = 225.000000000000000000
-          Size.PlatformDefault = False
-          StyleLookup = 'transparentlistboxstyle'
-          TabOrder = 0
-          DisableFocusEffect = True
-          ItemHeight = 40.000000000000000000
-          DefaultItemStyles.ItemStyle = ''
-          DefaultItemStyles.GroupHeaderStyle = ''
-          DefaultItemStyles.GroupFooterStyle = ''
-          Viewport.Width = 783.000000000000000000
-          Viewport.Height = 179.000000000000000000
-          object ListBoxItem1: TListBoxItem
-            Selectable = False
-            Size.Width = 783.000000000000000000
-            Size.Height = 40.000000000000000000
+        inherited lytFormulario: TLayout
+          Size.Width = 790.000000000000000000
+          Size.Height = 653.000000000000000000
+          object ListBox1: TListBox
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 790.000000000000000000
+            Size.Height = 225.000000000000000000
             Size.PlatformDefault = False
+            StyleLookup = 'transparentlistboxstyle'
             TabOrder = 0
-            object lbPessoaFisica: TLabel
-              Align = Left
-              AutoSize = True
-              Margins.Left = 10.000000000000000000
-              Margins.Right = 10.000000000000000000
-              Position.X = 10.000000000000000000
-              Size.Width = 94.000000000000000000
+            DisableFocusEffect = True
+            ItemHeight = 40.000000000000000000
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            Viewport.Width = 790.000000000000000000
+            Viewport.Height = 179.000000000000000000
+            object ListBoxItem1: TListBoxItem
+              Selectable = False
+              Size.Width = 790.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              TextSettings.WordWrap = False
-              Text = 'Pessoa F'#237'sica:'
               TabOrder = 0
+              object lbPessoaFisica: TLabel
+                Align = Left
+                AutoSize = True
+                Margins.Left = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 10.000000000000000000
+                Size.Width = 94.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.WordWrap = False
+                Text = 'Pessoa F'#237'sica:'
+                TabOrder = 0
+              end
+              object swPesFisica: TSwitch
+                Align = Left
+                IsChecked = False
+                Position.X = 114.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 44.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                OnClick = swPesFisicaClick
+              end
             end
-            object swPesFisica: TSwitch
-              Align = Left
-              IsChecked = False
-              Position.X = 114.000000000000000000
-              Position.Y = 10.000000000000000000
-              Size.Width = 44.000000000000000000
-              Size.Height = 20.000000000000000000
+            object ListBoxItem2: TListBoxItem
+              Position.Y = 40.000000000000000000
+              Size.Width = 790.000000000000000000
+              Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 1
-              OnClick = swPesFisicaClick
+              object lbRSNM: TLabel
+                Align = Left
+                AutoSize = True
+                Margins.Left = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 10.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.WordWrap = False
+                Text = 'Raz'#227'o Social:'
+                TabOrder = 0
+              end
+              object Edit2: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Client
+                TabOrder = 1
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Size.Width = 668.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+            object ListBoxItem3: TListBoxItem
+              Position.Y = 80.000000000000000000
+              Size.Width = 790.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object lbNFAP: TLabel
+                Align = Left
+                AutoSize = True
+                Margins.Left = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 10.000000000000000000
+                Size.Width = 109.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.WordWrap = False
+                Text = 'Nome Fantasia:'
+                TabOrder = 0
+              end
+              object Edit3: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Client
+                TabOrder = 1
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Size.Width = 651.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+            object ListBoxItem4: TListBoxItem
+              Position.Y = 120.000000000000000000
+              Size.Width = 790.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object lbDtFDtN: TLabel
+                Align = Left
+                AutoSize = True
+                Margins.Left = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 10.000000000000000000
+                Size.Width = 132.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.WordWrap = False
+                Text = 'Data de Funda'#231#227'o:'
+                TabOrder = 0
+              end
+              object Edit4: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Client
+                TabOrder = 1
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Size.Width = 628.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+            object ListBoxHeader1: TListBoxHeader
+              Size.Width = 790.000000000000000000
+              Size.Height = 46.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Label26: TLabel
+                Align = Contents
+                Margins.Top = 5.000000000000000000
+                Size.Width = 790.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'DADOS B'#193'SICOS'
+                TabOrder = 0
+              end
             end
           end
-          object ListBoxItem2: TListBoxItem
-            Selectable = False
-            Position.Y = 40.000000000000000000
-            Size.Width = 783.000000000000000000
-            Size.Height = 40.000000000000000000
+          object tbcDadosAdd: TTabControl
+            Align = Client
+            Margins.Top = 10.000000000000000000
+            Size.Width = 790.000000000000000000
+            Size.Height = 408.000000000000000000
             Size.PlatformDefault = False
+            TabIndex = 0
             TabOrder = 1
-            object lbRSNM: TLabel
-              Align = Left
-              AutoSize = True
-              Margins.Left = 10.000000000000000000
-              Margins.Right = 10.000000000000000000
-              Position.X = 10.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 40.000000000000000000
+            TabPosition = PlatformDefault
+            Sizes = (
+              790s
+              378s
+              790s
+              378s
+              790s
+              378s)
+            object tbiDoc: TTabItem
+              CustomIcon = <
+                item
+                end>
+              IsSelected = True
+              Size.Width = 112.000000000000000000
+              Size.Height = 30.000000000000000000
               Size.PlatformDefault = False
-              TextSettings.WordWrap = False
-              Text = 'Raz'#227'o Social:'
+              StyleLookup = ''
               TabOrder = 0
-            end
-            object Edit2: TEdit
-              Touch.InteractiveGestures = [LongTap, DoubleTap]
-              Align = Client
-              TabOrder = 1
-              Margins.Top = 5.000000000000000000
-              Margins.Right = 10.000000000000000000
-              Size.Width = 661.000000000000000000
-              Size.Height = 32.000000000000000000
-              Size.PlatformDefault = False
-            end
-          end
-          object ListBoxItem3: TListBoxItem
-            Selectable = False
-            Position.Y = 80.000000000000000000
-            Size.Width = 783.000000000000000000
-            Size.Height = 40.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 2
-            object lbNFAP: TLabel
-              Align = Left
-              AutoSize = True
-              Margins.Left = 10.000000000000000000
-              Margins.Right = 10.000000000000000000
-              Position.X = 10.000000000000000000
-              Size.Width = 109.000000000000000000
-              Size.Height = 40.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.WordWrap = False
-              Text = 'Nome Fantasia:'
-              TabOrder = 0
-            end
-            object Edit3: TEdit
-              Touch.InteractiveGestures = [LongTap, DoubleTap]
-              Align = Client
-              TabOrder = 1
-              Margins.Top = 5.000000000000000000
-              Margins.Right = 10.000000000000000000
-              Size.Width = 644.000000000000000000
-              Size.Height = 32.000000000000000000
-              Size.PlatformDefault = False
-            end
-          end
-          object ListBoxItem4: TListBoxItem
-            Selectable = False
-            Position.Y = 120.000000000000000000
-            Size.Width = 783.000000000000000000
-            Size.Height = 40.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 3
-            object lbDtFDtN: TLabel
-              Align = Left
-              AutoSize = True
-              Margins.Left = 10.000000000000000000
-              Margins.Right = 10.000000000000000000
-              Position.X = 10.000000000000000000
-              Size.Width = 132.000000000000000000
-              Size.Height = 40.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.WordWrap = False
-              Text = 'Data de Funda'#231#227'o:'
-              TabOrder = 0
-            end
-            object Edit4: TEdit
-              Touch.InteractiveGestures = [LongTap, DoubleTap]
-              Align = Client
-              TabOrder = 1
-              Margins.Top = 5.000000000000000000
-              Margins.Right = 10.000000000000000000
-              Size.Width = 621.000000000000000000
-              Size.Height = 32.000000000000000000
-              Size.PlatformDefault = False
-            end
-          end
-          object ListBoxHeader1: TListBoxHeader
-            Size.Width = 783.000000000000000000
-            Size.Height = 46.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 0
-            object Label26: TLabel
-              Align = Contents
-              Margins.Top = 5.000000000000000000
-              Size.Width = 783.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.HorzAlign = Center
-              Text = 'DADOS B'#193'SICOS'
-              TabOrder = 0
-            end
-          end
-        end
-        object tbcDadosAdd: TTabControl
-          Align = Client
-          Margins.Top = 10.000000000000000000
-          Size.Width = 783.000000000000000000
-          Size.Height = 408.000000000000000000
-          Size.PlatformDefault = False
-          TabIndex = 2
-          TabOrder = 1
-          TabPosition = PlatformDefault
-          Sizes = (
-            783s
-            378s
-            783s
-            378s
-            783s
-            378s)
-          object tbiDoc: TTabItem
-            CustomIcon = <
-              item
-              end>
-            IsSelected = False
-            Size.Width = 112.000000000000000000
-            Size.Height = 30.000000000000000000
-            Size.PlatformDefault = False
-            StyleLookup = ''
-            TabOrder = 0
-            Text = 'Documentos'
-            ExplicitSize.cx = 112.000000000000000000
-            ExplicitSize.cy = 30.000000000000000000
-            object ListBox2: TListBox
-              Align = Top
-              Size.Width = 783.000000000000000000
-              Size.Height = 265.000000000000000000
-              Size.PlatformDefault = False
-              StyleLookup = 'transparentlistboxstyle'
-              TabOrder = 0
-              DisableFocusEffect = True
-              ItemHeight = 40.000000000000000000
-              DefaultItemStyles.ItemStyle = ''
-              DefaultItemStyles.GroupHeaderStyle = ''
-              DefaultItemStyles.GroupFooterStyle = ''
-              Viewport.Width = 783.000000000000000000
-              Viewport.Height = 219.000000000000000000
-              object ListBoxItem5: TListBoxItem
-                Selectable = False
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
+              Text = 'Documentos'
+              ExplicitSize.cx = 112.000000000000000000
+              ExplicitSize.cy = 30.000000000000000000
+              object ListBox2: TListBox
+                Align = Top
+                Size.Width = 790.000000000000000000
+                Size.Height = 265.000000000000000000
                 Size.PlatformDefault = False
+                StyleLookup = 'transparentlistboxstyle'
                 TabOrder = 0
-                object Edit5: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  TabOrder = 1
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 713.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object lbCPFCNPJ: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 40.000000000000000000
+                DisableFocusEffect = True
+                ItemHeight = 40.000000000000000000
+                DefaultItemStyles.ItemStyle = ''
+                DefaultItemStyles.GroupHeaderStyle = ''
+                DefaultItemStyles.GroupFooterStyle = ''
+                Viewport.Width = 790.000000000000000000
+                Viewport.Height = 219.000000000000000000
+                object ListBoxItem5: TListBoxItem
+                  Size.Width = 790.000000000000000000
                   Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'CNPJ:'
-                  TabOrder = 0
-                end
-              end
-              object lbiSuframa: TListBoxItem
-                Selectable = False
-                Position.Y = 40.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 1
-                object Edit6: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  TabOrder = 1
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 691.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object lbSuframa: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 62.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Suframa:'
-                  TabOrder = 0
-                end
-              end
-              object ListBoxItem7: TListBoxItem
-                Selectable = False
-                Position.Y = 80.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 2
-                object Edit7: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  TabOrder = 1
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 624.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object lbIERG: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 129.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Inscri'#231#227'o Estadual:'
-                  TabOrder = 0
-                end
-              end
-              object lbiOGUF: TListBoxItem
-                Selectable = False
-                Position.Y = 120.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 4
-                object Label1: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 107.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Org'#227'o Emissor:'
-                  TabOrder = 1
-                end
-                object Edit21: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Left
-                  TabOrder = 3
-                  Position.X = 127.000000000000000000
-                  Position.Y = 4.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 154.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object Label4: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 301.000000000000000000
-                  Size.Width = 23.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'UF:'
-                  TabOrder = 0
-                end
-                object Edit22: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Left
-                  TabOrder = 2
-                  Position.X = 334.000000000000000000
-                  Position.Y = 4.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 131.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-              end
-              object ListBoxItem8: TListBoxItem
-                Selectable = False
-                Position.Y = 160.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 3
-                object Edit8: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  TabOrder = 1
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 614.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object lbIMTE: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 139.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Inscri'#231#227'o Municipal:'
-                  TabOrder = 0
-                end
-              end
-              object ListBoxHeader2: TListBoxHeader
-                Margins.Bottom = 5.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 46.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 0
-                object Label23: TLabel
-                  Align = Contents
-                  Size.Width = 783.000000000000000000
-                  Size.Height = 46.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.HorzAlign = Center
-                  Text = 'DOCUMENTOS'
-                  TabOrder = 1
-                end
-                object spbEnd: TSpeedButton
-                  Align = Right
-                  Margins.Bottom = 5.000000000000000000
-                  Position.X = 651.000000000000000000
-                  Size.Width = 132.000000000000000000
-                  Size.Height = 50.000000000000000000
-                  Size.PlatformDefault = False
-                  StyleLookup = 'nexttoolbuttonmultiview'
-                  Text = 'Endere'#231'o'
-                  OnClick = spbEndClick
-                end
-              end
-            end
-          end
-          object tbiEnd: TTabItem
-            CustomIcon = <
-              item
-              end>
-            IsSelected = False
-            Size.Width = 87.000000000000000000
-            Size.Height = 30.000000000000000000
-            Size.PlatformDefault = False
-            StyleLookup = ''
-            TabOrder = 0
-            Text = 'Endere'#231'o'
-            ExplicitSize.cx = 87.000000000000000000
-            ExplicitSize.cy = 30.000000000000000000
-            object ListBox3: TListBox
-              Align = Client
-              Size.Width = 783.000000000000000000
-              Size.Height = 378.000000000000000000
-              Size.PlatformDefault = False
-              StyleLookup = 'transparentlistboxstyle'
-              TabOrder = 0
-              DisableFocusEffect = True
-              ItemHeight = 40.000000000000000000
-              DefaultItemStyles.ItemStyle = ''
-              DefaultItemStyles.GroupHeaderStyle = ''
-              DefaultItemStyles.GroupFooterStyle = ''
-              Viewport.Width = 783.000000000000000000
-              Viewport.Height = 332.000000000000000000
-              object ListBoxItem9: TListBoxItem
-                Selectable = False
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 0
-                object Edit9: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  TabOrder = 1
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 722.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object Label11: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 31.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'CEP:'
-                  TabOrder = 0
-                end
-              end
-              object ListBoxItem10: TListBoxItem
-                Selectable = False
-                Position.Y = 40.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 1
-                object Edit10: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Left
-                  TabOrder = 3
-                  Position.X = 71.000000000000000000
-                  Position.Y = 4.000000000000000000
-                  Size.Width = 266.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object Label12: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 51.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Estado:'
-                  TabOrder = 2
-                end
-                object Label13: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 347.000000000000000000
-                  Size.Width = 53.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Cidade:'
-                  TabOrder = 1
-                end
-                object Edit11: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  TabOrder = 0
-                  Margins.Top = 4.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 363.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-              end
-              object ListBoxItem12: TListBoxItem
-                Selectable = False
-                Position.Y = 80.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 2
-                object Edit12: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  TabOrder = 1
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 707.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object Label14: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 46.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Bairro:'
-                  TabOrder = 0
-                end
-              end
-              object ListBoxItem17: TListBoxItem
-                Selectable = False
-                Position.Y = 120.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 3
-                object Label19: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 31.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Rua:'
-                  TabOrder = 1
-                end
-                object Edit17: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  TabOrder = 3
-                  Margins.Top = 5.000000000000000000
-                  Size.Width = 575.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object Label20: TLabel
-                  Align = Right
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 636.000000000000000000
-                  Size.Width = 23.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'N'#186':'
-                  TabOrder = 0
-                end
-                object Edit18: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Right
-                  TabOrder = 2
-                  Position.X = 669.000000000000000000
-                  Position.Y = 4.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 104.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-              end
-              object ListBoxItem6: TListBoxItem
-                Selectable = False
-                Position.Y = 160.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 4
-                object CornerButton2: TCornerButton
-                  Align = Right
-                  Margins.Left = 10.000000000000000000
-                  Margins.Top = 2.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Margins.Bottom = 2.000000000000000000
-                  Position.X = 619.000000000000000000
-                  Position.Y = 2.000000000000000000
-                  Sides = [Top, Left, Bottom, Right]
-                  Size.Width = 154.000000000000000000
-                  Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 0
-                  Text = 'Adicionar Endere'#231'o'
-                  XRadius = 3.000000000000000000
-                  YRadius = 3.000000000000000000
-                end
-              end
-              object ListBoxHeader3: TListBoxHeader
-                Margins.Bottom = 5.000000000000000000
-                Size.Width = 783.000000000000000000
-                Size.Height = 46.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 0
-                object Label24: TLabel
-                  Align = Contents
-                  Size.Width = 783.000000000000000000
-                  Size.Height = 46.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.HorzAlign = Center
-                  Text = 'ENDERE'#199'O'
-                  TabOrder = 2
-                end
-                object spbCont: TSpeedButton
-                  Align = Right
-                  Position.X = 651.000000000000000000
-                  Size.Width = 132.000000000000000000
-                  Size.Height = 50.000000000000000000
-                  Size.PlatformDefault = False
-                  StyleLookup = 'nexttoolbuttonmultiview'
-                  Text = 'Contatos'
-                  OnClick = spbContClick
-                end
-                object spbDoc: TSpeedButton
-                  Align = Left
-                  Size.Width = 153.000000000000000000
-                  Size.Height = 50.000000000000000000
-                  Size.PlatformDefault = False
-                  StyleLookup = 'backtoolbuttonmultiview'
-                  Text = 'Documentos'
-                  OnClick = spbDocClick
-                end
-              end
-            end
-          end
-          object tbiCont: TTabItem
-            CustomIcon = <
-              item
-              end>
-            IsSelected = True
-            Size.Width = 85.000000000000000000
-            Size.Height = 30.000000000000000000
-            Size.PlatformDefault = False
-            StyleLookup = ''
-            TabOrder = 0
-            Text = 'Contatos'
-            ExplicitSize.cx = 85.000000000000000000
-            ExplicitSize.cy = 30.000000000000000000
-            object Contatos: TListBox
-              Align = Client
-              Size.Width = 783.000000000000000000
-              Size.Height = 378.000000000000000000
-              Size.PlatformDefault = False
-              StyleLookup = 'transparentlistboxstyle'
-              TabOrder = 0
-              DisableFocusEffect = True
-              DefaultItemStyles.ItemStyle = ''
-              DefaultItemStyles.GroupHeaderStyle = ''
-              DefaultItemStyles.GroupFooterStyle = ''
-              Viewport.Width = 772.000000000000000000
-              Viewport.Height = 332.000000000000000000
-              object Telefones: TListBoxItem
-                TextSettings.HorzAlign = Center
-                StyledSettings = [Family, Size, Style, FontColor]
-                Size.Width = 772.000000000000000000
-                Size.Height = 45.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 8
-                Text = 'Telefones'
-                object Panel1: TPanel
-                  Align = Client
-                  Size.Width = 772.000000000000000000
-                  Size.Height = 45.000000000000000000
-                  Size.PlatformDefault = False
-                  TabOrder = 0
-                  OnClick = Panel1Click
-                  object lbtelefones: TLabel
-                    Align = Contents
-                    Size.Width = 772.000000000000000000
-                    Size.Height = 45.000000000000000000
+                  object Edit5: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 1
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 720.000000000000000000
+                    Size.Height = 32.000000000000000000
                     Size.PlatformDefault = False
-                    TextSettings.HorzAlign = Center
-                    Text = 'Telefones'
+                  end
+                  object lbCPFCNPJ: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 40.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'CNPJ:'
                     TabOrder = 0
                   end
-                  object spbTel: TSpeedButton
-                    Align = Right
-                    Position.X = 726.000000000000000000
-                    Size.Width = 46.000000000000000000
-                    Size.Height = 46.000000000000000000
-                    Size.PlatformDefault = False
-                    StyleLookup = 'arrowlefttoolbutton'
-                    Text = 'spbTel'
-                    OnClick = Panel1Click
-                  end
                 end
-              end
-              object lbiDescTel: TListBoxItem
-                Selectable = False
-                Position.Y = 45.000000000000000000
-                Size.Width = 772.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 1
-                object Edit25: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  StyleLookup = 'editstyle'
-                  TabOrder = 1
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 670.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object Label10: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 72.000000000000000000
+                object lbiSuframa: TListBoxItem
+                  Position.Y = 40.000000000000000000
+                  Size.Width = 790.000000000000000000
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Descri'#231#227'o:'
-                  TabOrder = 0
+                  TabOrder = 1
+                  object Edit6: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 1
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 698.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object lbSuframa: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 62.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Suframa:'
+                    TabOrder = 0
+                  end
                 end
-              end
-              object lbiNumTel: TListBoxItem
-                Selectable = False
-                Position.Y = 85.000000000000000000
-                Size.Width = 772.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 3
-                object Edit23: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Left
+                object ListBoxItem7: TListBoxItem
+                  Position.Y = 80.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 2
+                  object Edit7: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 1
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 631.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object lbIERG: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 129.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Inscri'#231#227'o Estadual:'
+                    TabOrder = 0
+                  end
+                end
+                object lbiOGUF: TListBoxItem
+                  Position.Y = 120.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
                   TabOrder = 4
-                  Position.X = 95.000000000000000000
-                  Position.Y = 4.000000000000000000
-                  Size.Width = 170.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object Label8: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 75.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'N'#250'mero 1:'
-                  TabOrder = 3
-                end
-                object Label9: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 275.000000000000000000
-                  Size.Width = 75.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'N'#250'mero2: '
-                  TabOrder = 2
-                end
-                object Edit24: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Left
-                  TabOrder = 1
-                  Position.X = 360.000000000000000000
-                  Position.Y = 4.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 225.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object CornerButton3: TCornerButton
-                  Align = Right
-                  Margins.Left = 10.000000000000000000
-                  Margins.Top = 2.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Margins.Bottom = 2.000000000000000000
-                  Position.X = 605.000000000000000000
-                  Position.Y = 2.000000000000000000
-                  Sides = [Top, Left, Bottom, Right]
-                  Size.Width = 157.000000000000000000
-                  Size.Height = 36.000000000000000000
-                  Size.PlatformDefault = False
-                  TabOrder = 0
-                  Text = 'Adicionar Contato'
-                  XRadius = 3.000000000000000000
-                  YRadius = 3.000000000000000000
-                  OnClick = CornerButton1Click
-                end
-              end
-              object lbiTelefones: TListBoxItem
-                Position.Y = 125.000000000000000000
-                Size.Width = 772.000000000000000000
-                Size.Height = 100.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 7
-                object lvTelefones: TListView
-                  ItemAppearanceClassName = 'TListItemAppearance'
-                  ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
-                  HeaderAppearanceClassName = 'TListHeaderObjects'
-                  FooterAppearanceClassName = 'TListHeaderObjects'
-                  Align = Client
-                  Size.Width = 772.000000000000000000
-                  Size.Height = 100.000000000000000000
-                  Size.PlatformDefault = False
-                  TabOrder = 0
-                end
-              end
-              object ListBoxItem13: TListBoxItem
-                TextSettings.HorzAlign = Center
-                StyledSettings = [Family, Size, Style, FontColor]
-                Position.Y = 225.000000000000000000
-                Size.Width = 772.000000000000000000
-                Size.Height = 45.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 9
-                Text = 'E-mails'
-                object Panel2: TPanel
-                  Align = Client
-                  Size.Width = 772.000000000000000000
-                  Size.Height = 45.000000000000000000
-                  Size.PlatformDefault = False
-                  TabOrder = 0
-                  OnClick = Panel2Click
-                  object lbEmail: TLabel
-                    Align = Contents
-                    Size.Width = 772.000000000000000000
-                    Size.Height = 45.000000000000000000
+                  object Label1: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 107.000000000000000000
+                    Size.Height = 40.000000000000000000
                     Size.PlatformDefault = False
-                    TextSettings.HorzAlign = Center
-                    Text = 'E-Mail'
+                    TextSettings.WordWrap = False
+                    Text = 'Org'#227'o Emissor:'
+                    TabOrder = 1
+                  end
+                  object Edit21: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Left
+                    TabOrder = 3
+                    Position.X = 127.000000000000000000
+                    Position.Y = 4.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 154.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label4: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 301.000000000000000000
+                    Size.Width = 23.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'UF:'
                     TabOrder = 0
                   end
-                  object spbEmail: TSpeedButton
-                    Align = Right
-                    Position.X = 726.000000000000000000
-                    Size.Width = 46.000000000000000000
+                  object Edit22: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Left
+                    TabOrder = 2
+                    Position.X = 334.000000000000000000
+                    Position.Y = 4.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 131.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                end
+                object ListBoxItem8: TListBoxItem
+                  Position.Y = 160.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 3
+                  object Edit8: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 1
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 621.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object lbIMTE: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 139.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Inscri'#231#227'o Municipal:'
+                    TabOrder = 0
+                  end
+                end
+                object ListBoxHeader2: TListBoxHeader
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 46.000000000000000000
+                  Size.PlatformDefault = False
+                  StyleLookup = 'toolbarstyle'
+                  TabOrder = 0
+                  object Label23: TLabel
+                    Align = Contents
+                    Size.Width = 790.000000000000000000
                     Size.Height = 46.000000000000000000
                     Size.PlatformDefault = False
-                    StyleLookup = 'arrowlefttoolbutton'
-                    Text = 'SpeedButton1'
-                    OnClick = Panel2Click
+                    TextSettings.HorzAlign = Center
+                    Text = 'DOCUMENTOS'
+                    TabOrder = 1
+                  end
+                  object spbEnd: TSpeedButton
+                    Align = Right
+                    Margins.Bottom = 5.000000000000000000
+                    Position.X = 658.000000000000000000
+                    Size.Width = 132.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    StyleLookup = 'nexttoolbuttonmultiview'
+                    Text = 'Endere'#231'o'
+                    OnClick = spbEndClick
                   end
                 end
               end
-              object lbiDescEmail: TListBoxItem
-                Selectable = False
-                Position.Y = 270.000000000000000000
-                Size.Width = 772.000000000000000000
-                Size.Height = 40.000000000000000000
+            end
+            object tbiEnd: TTabItem
+              CustomIcon = <
+                item
+                end>
+              IsSelected = False
+              Size.Width = 87.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = ''
+              TabOrder = 0
+              Text = 'Endere'#231'o'
+              ExplicitSize.cx = 87.000000000000000000
+              ExplicitSize.cy = 30.000000000000000000
+              object ListBox3: TListBox
+                Align = Client
+                Size.Width = 790.000000000000000000
+                Size.Height = 378.000000000000000000
                 Size.PlatformDefault = False
+                StyleLookup = 'transparentlistboxstyle'
                 TabOrder = 0
-                object Edit28: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
-                  StyleLookup = 'editstyle'
-                  TabOrder = 1
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Size.Width = 670.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
-                end
-                object Label29: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 72.000000000000000000
+                DisableFocusEffect = True
+                ItemHeight = 40.000000000000000000
+                DefaultItemStyles.ItemStyle = ''
+                DefaultItemStyles.GroupHeaderStyle = ''
+                DefaultItemStyles.GroupFooterStyle = ''
+                Viewport.Width = 790.000000000000000000
+                Viewport.Height = 332.000000000000000000
+                object ListBoxItem9: TListBoxItem
+                  Size.Width = 790.000000000000000000
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'Descri'#231#227'o:'
                   TabOrder = 0
+                  object Edit9: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 1
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 729.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label11: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 31.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'CEP:'
+                    TabOrder = 0
+                  end
                 end
-              end
-              object lbiCEmail: TListBoxItem
-                Selectable = False
-                Position.Y = 310.000000000000000000
-                Size.Width = 772.000000000000000000
-                Size.Height = 40.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 2
-                object Edit26: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Client
+                object ListBoxItem10: TListBoxItem
+                  Position.Y = 40.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  object Edit10: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Left
+                    TabOrder = 3
+                    Position.X = 71.000000000000000000
+                    Position.Y = 4.000000000000000000
+                    Size.Width = 266.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label12: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 51.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Estado:'
+                    TabOrder = 2
+                  end
+                  object Label13: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 347.000000000000000000
+                    Size.Width = 53.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Cidade:'
+                    TabOrder = 1
+                  end
+                  object Edit11: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 0
+                    Margins.Top = 4.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 370.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                end
+                object ListBoxItem12: TListBoxItem
+                  Position.Y = 80.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
                   TabOrder = 2
-                  Margins.Top = 4.000000000000000000
-                  Size.Width = 527.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
+                  object Edit12: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 1
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 714.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label14: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 46.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Bairro:'
+                    TabOrder = 0
+                  end
                 end
-                object Label27: TLabel
-                  Align = Left
-                  AutoSize = True
-                  Margins.Left = 10.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Position.X = 10.000000000000000000
-                  Size.Width = 48.000000000000000000
+                object ListBoxItem17: TListBoxItem
+                  Position.Y = 120.000000000000000000
+                  Size.Width = 790.000000000000000000
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
-                  TextSettings.WordWrap = False
-                  Text = 'E-mail:'
-                  TabOrder = 1
+                  TabOrder = 3
+                  object Label19: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 31.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Rua:'
+                    TabOrder = 1
+                  end
+                  object Edit17: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 3
+                    Margins.Top = 5.000000000000000000
+                    Size.Width = 582.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label20: TLabel
+                    Align = Right
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 643.000000000000000000
+                    Size.Width = 23.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'N'#186':'
+                    TabOrder = 0
+                  end
+                  object Edit18: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Right
+                    TabOrder = 2
+                    Position.X = 676.000000000000000000
+                    Position.Y = 4.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 104.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
                 end
-                object CornerButton4: TCornerButton
-                  Align = Right
-                  Margins.Left = 10.000000000000000000
-                  Margins.Top = 2.000000000000000000
-                  Margins.Right = 10.000000000000000000
-                  Margins.Bottom = 2.000000000000000000
-                  Position.X = 605.000000000000000000
-                  Position.Y = 2.000000000000000000
-                  Sides = [Top, Left, Bottom, Right]
-                  Size.Width = 157.000000000000000000
-                  Size.Height = 36.000000000000000000
+                object ListBoxItem6: TListBoxItem
+                  Selectable = False
+                  Position.Y = 160.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
-                  TabOrder = 0
-                  Text = 'Adicionar Contato'
-                  XRadius = 3.000000000000000000
-                  YRadius = 3.000000000000000000
-                  OnClick = CornerButton1Click
+                  TabOrder = 4
+                  object CornerButton2: TCornerButton
+                    Align = Right
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Position.X = 626.000000000000000000
+                    Position.Y = 2.000000000000000000
+                    Sides = [Top, Left, Bottom, Right]
+                    Size.Width = 154.000000000000000000
+                    Size.Height = 36.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    Text = 'Adicionar Endere'#231'o'
+                    XRadius = 3.000000000000000000
+                    YRadius = 3.000000000000000000
+                  end
                 end
-              end
-              object lbiEmail: TListBoxItem
-                Selectable = False
-                Position.Y = 350.000000000000000000
-                Size.Width = 772.000000000000000000
-                Size.Height = 100.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 6
-                object lvEmail: TListView
-                  ItemAppearanceClassName = 'TListItemAppearance'
-                  ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
-                  HeaderAppearanceClassName = 'TListHeaderObjects'
-                  FooterAppearanceClassName = 'TListHeaderObjects'
-                  Align = Client
-                  Size.Width = 772.000000000000000000
-                  Size.Height = 100.000000000000000000
-                  Size.PlatformDefault = False
-                  TabOrder = 0
-                end
-              end
-              object ListBoxHeader5: TListBoxHeader
-                Size.Width = 783.000000000000000000
-                Size.Height = 46.000000000000000000
-                Size.PlatformDefault = False
-                TabOrder = 0
-                object Label7: TLabel
-                  Align = Contents
-                  Size.Width = 783.000000000000000000
+                object ListBoxHeader3: TListBoxHeader
+                  Margins.Bottom = 5.000000000000000000
+                  Size.Width = 790.000000000000000000
                   Size.Height = 46.000000000000000000
                   Size.PlatformDefault = False
-                  TextSettings.HorzAlign = Center
-                  Text = 'CONTATOS'
+                  StyleLookup = 'bottomtoolbar'
                   TabOrder = 0
+                  object Label24: TLabel
+                    Align = Contents
+                    Size.Width = 790.000000000000000000
+                    Size.Height = 46.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.HorzAlign = Center
+                    Text = 'ENDERE'#199'O'
+                    TabOrder = 2
+                  end
+                  object spbCont: TSpeedButton
+                    Align = Right
+                    Position.X = 658.000000000000000000
+                    Size.Width = 132.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    StyleLookup = 'nexttoolbuttonmultiview'
+                    Text = 'Contatos'
+                    OnClick = spbContClick
+                  end
+                  object spbDoc: TSpeedButton
+                    Align = Left
+                    Size.Width = 153.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    StyleLookup = 'backtoolbuttonmultiview'
+                    Text = 'Documentos'
+                    OnClick = spbDocClick
+                  end
                 end
-                object spbEnde: TSpeedButton
-                  Align = Left
-                  Margins.Bottom = 2.000000000000000000
-                  Size.Width = 145.000000000000000000
-                  Size.Height = 50.000000000000000000
+              end
+            end
+            object tbiCont: TTabItem
+              CustomIcon = <
+                item
+                end>
+              IsSelected = False
+              Size.Width = 85.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = ''
+              TabOrder = 0
+              Text = 'Contatos'
+              ExplicitSize.cx = 85.000000000000000000
+              ExplicitSize.cy = 30.000000000000000000
+              object Contatos: TListBox
+                Align = Client
+                Size.Width = 790.000000000000000000
+                Size.Height = 378.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'transparentlistboxstyle'
+                TabOrder = 0
+                DisableFocusEffect = True
+                DefaultItemStyles.ItemStyle = ''
+                DefaultItemStyles.GroupHeaderStyle = ''
+                DefaultItemStyles.GroupFooterStyle = ''
+                Viewport.Width = 790.000000000000000000
+                Viewport.Height = 332.000000000000000000
+                object Telefones: TListBoxItem
+                  TextSettings.HorzAlign = Center
+                  StyledSettings = [Family, Size, Style, FontColor]
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 45.000000000000000000
                   Size.PlatformDefault = False
-                  StyleLookup = 'backtoolbuttonmultiview'
-                  Text = 'Endere'#231'o'
-                  OnClick = spbEndeClick
+                  TabOrder = 8
+                  Text = 'Telefones'
+                  object Panel1: TPanel
+                    Align = Client
+                    Size.Width = 790.000000000000000000
+                    Size.Height = 45.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnClick = Panel1Click
+                    object lbtelefones: TLabel
+                      Align = Contents
+                      Size.Width = 790.000000000000000000
+                      Size.Height = 45.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.HorzAlign = Center
+                      Text = 'Telefones'
+                      TabOrder = 0
+                    end
+                    object spbTel: TSpeedButton
+                      Align = Right
+                      Position.X = 744.000000000000000000
+                      Size.Width = 46.000000000000000000
+                      Size.Height = 46.000000000000000000
+                      Size.PlatformDefault = False
+                      StyleLookup = 'arrowdowntoolbuttonborderedright'
+                      Text = 'spbTel'
+                      OnClick = Panel1Click
+                    end
+                  end
+                end
+                object lbiDescTel: TListBoxItem
+                  Position.Y = 45.000000000000000000
+                  Size.Width = 779.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  Visible = False
+                  object Edit25: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    StyleLookup = 'editstyle'
+                    TabOrder = 1
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 677.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                    Visible = False
+                  end
+                  object Label10: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 72.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Descri'#231#227'o:'
+                    Visible = False
+                    TabOrder = 0
+                  end
+                end
+                object lbiNumTel: TListBoxItem
+                  Position.Y = 45.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 3
+                  Visible = False
+                  object Edit23: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Left
+                    TabOrder = 4
+                    Position.X = 95.000000000000000000
+                    Position.Y = 4.000000000000000000
+                    Size.Width = 170.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label8: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 75.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'N'#250'mero 1:'
+                    TabOrder = 3
+                  end
+                  object Label9: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 275.000000000000000000
+                    Size.Width = 75.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'N'#250'mero2: '
+                    TabOrder = 2
+                  end
+                  object Edit24: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Left
+                    TabOrder = 1
+                    Position.X = 360.000000000000000000
+                    Position.Y = 4.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 225.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object CornerButton3: TCornerButton
+                    Align = Right
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Position.X = 623.000000000000000000
+                    Position.Y = 2.000000000000000000
+                    Sides = [Top, Left, Bottom, Right]
+                    Size.Width = 157.000000000000000000
+                    Size.Height = 36.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    Text = 'Adicionar Contato'
+                    XRadius = 3.000000000000000000
+                    YRadius = 3.000000000000000000
+                    OnClick = CornerButton1Click
+                  end
+                end
+                object lbiTelefones: TListBoxItem
+                  Position.Y = 45.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 100.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 7
+                  Visible = False
+                  object lvTelefones: TListView
+                    ItemAppearanceClassName = 'TListItemAppearance'
+                    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+                    HeaderAppearanceClassName = 'TListHeaderObjects'
+                    FooterAppearanceClassName = 'TListHeaderObjects'
+                    Align = Client
+                    Size.Width = 790.000000000000000000
+                    Size.Height = 100.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                  end
+                end
+                object ListBoxItem13: TListBoxItem
+                  TextSettings.HorzAlign = Center
+                  StyledSettings = [Family, Size, Style, FontColor]
+                  Position.Y = 45.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 45.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 9
+                  Text = 'E-mails'
+                  object Panel2: TPanel
+                    Align = Client
+                    Size.Width = 790.000000000000000000
+                    Size.Height = 45.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnClick = Panel2Click
+                    object lbEmail: TLabel
+                      Align = Contents
+                      Size.Width = 790.000000000000000000
+                      Size.Height = 45.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.HorzAlign = Center
+                      Text = 'E-Mail'
+                      TabOrder = 0
+                    end
+                    object spbEmail: TSpeedButton
+                      Align = Right
+                      Position.X = 744.000000000000000000
+                      Size.Width = 46.000000000000000000
+                      Size.Height = 46.000000000000000000
+                      Size.PlatformDefault = False
+                      StyleLookup = 'arrowdowntoolbuttonborderedright'
+                      Text = 'SpeedButton1'
+                      OnClick = Panel2Click
+                    end
+                  end
+                end
+                object lbiDescEmail: TListBoxItem
+                  Position.Y = 270.000000000000000000
+                  Size.Width = 779.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  Visible = False
+                  object Edit28: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    StyleLookup = 'editstyle'
+                    TabOrder = 1
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 677.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label29: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 72.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'Descri'#231#227'o:'
+                    TabOrder = 0
+                  end
+                end
+                object lbiCEmail: TListBoxItem
+                  Position.Y = 310.000000000000000000
+                  Size.Width = 779.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 2
+                  Visible = False
+                  object Edit26: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 2
+                    Margins.Top = 4.000000000000000000
+                    Size.Width = 534.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label27: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 48.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'E-mail:'
+                    TabOrder = 1
+                  end
+                  object CornerButton4: TCornerButton
+                    Align = Right
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Position.X = 612.000000000000000000
+                    Position.Y = 2.000000000000000000
+                    Sides = [Top, Left, Bottom, Right]
+                    Size.Width = 157.000000000000000000
+                    Size.Height = 36.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    Text = 'Adicionar Contato'
+                    XRadius = 3.000000000000000000
+                    YRadius = 3.000000000000000000
+                    OnClick = CornerButton1Click
+                  end
+                end
+                object lbiEmail: TListBoxItem
+                  Selectable = False
+                  Position.Y = 230.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 100.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 6
+                  Visible = False
+                  object lvEmail: TListView
+                    ItemAppearanceClassName = 'TListItemAppearance'
+                    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+                    HeaderAppearanceClassName = 'TListHeaderObjects'
+                    FooterAppearanceClassName = 'TListHeaderObjects'
+                    Align = Client
+                    Size.Width = 790.000000000000000000
+                    Size.Height = 100.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                  end
+                end
+                object ListBoxHeader5: TListBoxHeader
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 46.000000000000000000
+                  Size.PlatformDefault = False
+                  StyleLookup = 'bottomtoolbar'
+                  TabOrder = 0
+                  object Label7: TLabel
+                    Align = Contents
+                    Size.Width = 790.000000000000000000
+                    Size.Height = 46.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.HorzAlign = Center
+                    Text = 'CONTATOS'
+                    TabOrder = 0
+                  end
+                  object spbEnde: TSpeedButton
+                    Align = Left
+                    Margins.Bottom = 2.000000000000000000
+                    Size.Width = 145.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    StyleLookup = 'backtoolbuttonmultiview'
+                    Text = 'Endere'#231'o'
+                    OnClick = spbEndeClick
+                  end
                 end
               end
             end
