@@ -11,6 +11,7 @@ object frmMain: TfrmMain
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object lytConteiner: TLayout
     Align = Client
@@ -52522,8 +52523,8 @@ object frmMain: TfrmMain
             6F6C6F720708636C61426C61636B0B4E6F726D616C436F6C6F720708636C6157
             686974650C50726573736564436F6C6F720708636C615768697465000000}
         end>
-      Left = 600
-      Top = 432
+      Left = 720
+      Top = 456
     end
   end
   object MultiView1: TMultiView
@@ -52547,10 +52548,27 @@ object frmMain: TfrmMain
       DefaultItemStyles.GroupFooterStyle = ''
       Viewport.Width = 246.000000000000000000
       Viewport.Height = 590.000000000000000000
+      object ListBoxItem4: TListBoxItem
+        Size.Width = 246.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Home'
+        OnClick = ListBoxItem4Click
+      end
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        Position.Y = 40.000000000000000000
+        Size.Width = 246.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Cadastro'
+      end
       object ListBoxItem1: TListBoxItem
         TextSettings.Font.Size = 15.000000000000000000
         StyledSettings = [Family, Style, FontColor, Other]
         ItemData.Accessory = aMore
+        Position.Y = 80.000000000000000000
         Size.Width = 246.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
@@ -52560,7 +52578,7 @@ object frmMain: TfrmMain
       end
       object ListBoxItem3: TListBoxItem
         ItemData.Accessory = aMore
-        Position.Y = 40.000000000000000000
+        Position.Y = 120.000000000000000000
         Size.Width = 246.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
@@ -52568,8 +52586,54 @@ object frmMain: TfrmMain
         Text = 'Usu'#225'rio'
         OnClick = ListBoxItem3Click
       end
+      object ListBoxItem6: TListBoxItem
+        ItemData.Accessory = aMore
+        Position.Y = 160.000000000000000000
+        Size.Width = 246.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Produtos'
+        OnClick = ListBoxItem6Click
+      end
+      object ListBoxGroupHeader2: TListBoxGroupHeader
+        Position.Y = 200.000000000000000000
+        Size.Width = 246.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 'Lan'#231'amentos'
+      end
+      object lbiOs: TListBoxItem
+        ItemData.Accessory = aMore
+        Position.Y = 240.000000000000000000
+        Size.Width = 246.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Atendimentos'
+        OnClick = lbiOsClick
+      end
+      object ListBoxItem5: TListBoxItem
+        ItemData.Accessory = aMore
+        Position.Y = 280.000000000000000000
+        Size.Width = 246.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Or'#231'amentos'
+        OnClick = ListBoxItem5Click
+      end
+      object ListBoxGroupHeader3: TListBoxGroupHeader
+        Position.Y = 320.000000000000000000
+        Size.Width = 246.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Text = 'Sistema'
+      end
       object ListBoxItem2: TListBoxItem
-        Position.Y = 80.000000000000000000
+        Position.Y = 360.000000000000000000
         Size.Width = 246.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
@@ -52582,7 +52646,7 @@ object frmMain: TfrmMain
         Size.Height = 46.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object Label1: TLabel
+        object Menu: TLabel
           Align = Client
           StyledSettings = [Family, FontColor]
           Size.Width = 246.000000000000000000
@@ -52591,7 +52655,7 @@ object frmMain: TfrmMain
           TextSettings.Font.Size = 20.000000000000000000
           TextSettings.Font.StyleExt = {00070000000000000004000000}
           TextSettings.HorzAlign = Center
-          Text = 'Cadastro'
+          Text = 'Menu'
           TabOrder = 0
         end
       end

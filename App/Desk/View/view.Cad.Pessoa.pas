@@ -120,6 +120,7 @@ type
     procedure CornerButton1Click(Sender: TObject);
     procedure Panel2Click(Sender: TObject);
     procedure Panel1Click(Sender: TObject);
+    procedure spbSalvClick(Sender: TObject);
   private
     { Private declarations }
     procedure VerificaTipo(Tp : integer);
@@ -213,6 +214,12 @@ begin
   ctaEndereco.Execute;
 end;
 
+procedure TfrmCadPessoa.spbSalvClick(Sender: TObject);
+begin
+  inherited;
+  lbTitulo.Text := 'Cadastro de Pessoa';
+end;
+
 procedure TfrmCadPessoa.Switch1Switch(Sender: TObject);
 begin
   inherited;
@@ -240,6 +247,7 @@ begin
   lbCPFCNPJ.Text := 'CNPJ:';
   lbIERG.Text := 'Inscrição Estadual:';
   lbIMTE.Text := 'Inscrição Municipal:';
+  lbTitulo.Text := 'Cadastrando Pessoa Jurídica';
   lbiOGUF.Visible := False;
 end
 else
@@ -253,6 +261,7 @@ begin
   lbCPFCNPJ.Text := 'CPF:';
   lbIERG.Text := 'RG:';
   lbIMTE.Text := 'Título de Eleitor:';
+  lbTitulo.Text := 'Cadastrando Pessoa Física';
   lbiOGUF.Visible := True;
 end;
 

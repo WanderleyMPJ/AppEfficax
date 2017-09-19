@@ -41,6 +41,7 @@ type
     procedure pebVerSenhaMouseLeave(Sender: TObject);
     procedure pebVerCSenhaMouseLeave(Sender: TObject);
     procedure pebVerCSenhaMouseEnter(Sender: TObject);
+    procedure spbAddClick(Sender: TObject);
   private
     { Private declarations }
 //    procedure AbreBusca(tp : integer);
@@ -90,6 +91,12 @@ procedure TfrmCadUser.sebPessoaClick(Sender: TObject);
 begin
 //Código um para Pessoa
  ChamaBusca;
+end;
+
+procedure TfrmCadUser.spbAddClick(Sender: TObject);
+begin
+  inherited;
+
 end;
 
 {

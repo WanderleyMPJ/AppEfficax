@@ -32,27 +32,23 @@ inherited frmCadUser: TfrmCadUser
     inherited TabControl1: TTabControl
       Size.Width = 779.000000000000000000
       Size.Height = 470.000000000000000000
+      TabIndex = 1
       Sizes = (
         779s
         470s
         779s
         470s)
       inherited tbiLista: TTabItem
+        IsSelected = False
         ExplicitSize.cx = 12.000000000000000000
         ExplicitSize.cy = 12.000000000000000000
         inherited ToolBar2: TToolBar
           Size.Width = 779.000000000000000000
-          inherited ComboBox1: TComboBox
-            Position.Y = 7.000000000000000000
-            Size.Height = 32.000000000000000000
-          end
           inherited Edit1: TEdit
             Size.Width = 389.000000000000000000
-            Size.Height = 32.000000000000000000
           end
           inherited SpeedButton7: TSpeedButton
             Position.X = 723.000000000000000000
-            Size.Height = 46.000000000000000000
           end
         end
         inherited ListView1: TListView
@@ -61,6 +57,7 @@ inherited frmCadUser: TfrmCadUser
         end
       end
       inherited tbiFormulario: TTabItem
+        IsSelected = True
         ExplicitSize.cx = 12.000000000000000000
         ExplicitSize.cy = 12.000000000000000000
         inherited lytFormulario: TLayout
@@ -88,7 +85,7 @@ inherited frmCadUser: TfrmCadUser
               DefaultItemStyles.GroupHeaderStyle = ''
               DefaultItemStyles.GroupFooterStyle = ''
               Viewport.Width = 381.000000000000000000
-              Viewport.Height = 206.000000000000000000
+              Viewport.Height = 252.000000000000000000
               object ListBoxItem1: TListBoxItem
                 Size.Width = 381.000000000000000000
                 Size.Height = 40.000000000000000000

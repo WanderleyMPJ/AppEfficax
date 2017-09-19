@@ -312,7 +312,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="View\view.Teste.pas">
-            <Form>Form4</Form>
+            <Form>fom4</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="View\view.Main.pas">
@@ -333,6 +333,26 @@
         </DCCReference>
         <DCCReference Include="View\view.Busca.pas">
             <Form>frmBusca</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="View\view.Cont.Os.pas">
+            <Form>frmOs</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="View\view.Frm.Os.pas">
+            <Form>frmFormOs</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="View\view.Home.pas">
+            <Form>frmHome</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="View\view.Orcamento.pas">
+            <Form>frmOrcamento</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="View\view.Cad.Produtos.pas">
+            <Form>frmCadProd</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
