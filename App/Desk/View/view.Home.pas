@@ -24,6 +24,7 @@ type
     Layout24: TLayout;
     ImageList1: TImageList;
     CornerButton1: TCornerButton;
+    CornerButton2: TCornerButton;
   private
     { Private declarations }
   public

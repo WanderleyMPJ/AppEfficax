@@ -13,7 +13,13 @@ uses
   view.Frm.Os in 'View\view.Frm.Os.pas' {frmFormOs},
   view.Home in 'View\view.Home.pas' {frmHome},
   view.Orcamento in 'View\view.Orcamento.pas' {frmOrcamento},
-  view.Cad.Produtos in 'View\view.Cad.Produtos.pas' {frmCadProd};
+  view.Cad.Produtos in 'View\view.Cad.Produtos.pas' {frmCadProd},
+  Classe.Pessoa in 'Class\Classe.Pessoa.pas',
+  Classe.PContato in 'Class\Classe.PContato.pas',
+  Classe.PEndereco in 'Class\Classe.PEndereco.pas',
+  Classe.Cotacao in 'Class\Classe.Cotacao.pas',
+  Classe.CItem in 'Class\Classe.CItem.pas',
+  Classe.Produto in 'Class\Classe.Produto.pas';
 
 {$R *.res}
 

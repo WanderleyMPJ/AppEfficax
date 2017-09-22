@@ -56,7 +56,6 @@ type
     spbEnd: TSpeedButton;
     spbCont: TSpeedButton;
     spbDoc: TSpeedButton;
-    ListBoxHeader1: TListBoxHeader;
     ListBoxItem17: TListBoxItem;
     Label19: TLabel;
     Edit17: TEdit;
@@ -69,7 +68,6 @@ type
     ctaDocumentos: TChangeTabAction;
     ctaEndereco: TChangeTabAction;
     ctaContato: TChangeTabAction;
-    Label26: TLabel;
     lbiOGUF: TListBoxItem;
     Label1: TLabel;
     Edit21: TEdit;
@@ -110,6 +108,15 @@ type
     lbEmail: TLabel;
     spbTel: TSpeedButton;
     spbEmail: TSpeedButton;
+    ListBoxItem11: TListBoxItem;
+    Label5: TLabel;
+    Switch1: TSwitch;
+    Label6: TLabel;
+    Switch2: TSwitch;
+    Label15: TLabel;
+    Switch3: TSwitch;
+    ListBoxHeader1: TListBoxHeader;
+    Label26: TLabel;
     procedure spbEndClick(Sender: TObject);
     procedure spbEndeClick(Sender: TObject);
     procedure spbDocClick(Sender: TObject);
