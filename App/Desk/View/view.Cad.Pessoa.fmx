@@ -213,7 +213,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                 Text = 'Raz'#227'o Social:'
                 TabOrder = 0
               end
-              object Edit2: TEdit
+              object nome_razsoc: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = Client
                 TabOrder = 1
@@ -243,7 +243,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                 Text = 'Nome Fantasia:'
                 TabOrder = 0
               end
-              object Edit3: TEdit
+              object nmfant_apelido: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = Client
                 TabOrder = 1
@@ -273,7 +273,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                 Text = 'Data de Funda'#231#227'o:'
                 TabOrder = 0
               end
-              object Edit4: TEdit
+              object dtnasc_dtfund: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = Client
                 TabOrder = 1
@@ -308,7 +308,7 @@ inherited frmCadPessoa: TfrmCadPessoa
             Size.Width = 790.000000000000000000
             Size.Height = 378.000000000000000000
             Size.PlatformDefault = False
-            TabIndex = 0
+            TabIndex = 2
             TabOrder = 1
             TabPosition = PlatformDefault
             Sizes = (
@@ -322,7 +322,7 @@ inherited frmCadPessoa: TfrmCadPessoa
               CustomIcon = <
                 item
                 end>
-              IsSelected = True
+              IsSelected = False
               Size.Width = 112.000000000000000000
               Size.Height = 30.000000000000000000
               Size.PlatformDefault = False
@@ -350,7 +350,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 0
-                  object Edit5: TEdit
+                  object cpf_cnpj: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 1
@@ -380,7 +380,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 1
-                  object Edit6: TEdit
+                  object suframa: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 1
@@ -410,7 +410,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 2
-                  object Edit7: TEdit
+                  object rg_inscest: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 1
@@ -446,45 +446,21 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Margins.Left = 10.000000000000000000
                     Margins.Right = 10.000000000000000000
                     Position.X = 10.000000000000000000
-                    Size.Width = 107.000000000000000000
+                    Size.Width = 132.000000000000000000
                     Size.Height = 40.000000000000000000
                     Size.PlatformDefault = False
                     TextSettings.WordWrap = False
-                    Text = 'Org'#227'o Emissor:'
-                    TabOrder = 1
+                    Text = 'Org'#227'o Emissor/UF:'
+                    TabOrder = 0
                   end
-                  object Edit21: TEdit
+                  object oguf: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Left
-                    TabOrder = 3
-                    Position.X = 127.000000000000000000
+                    TabOrder = 1
+                    Position.X = 152.000000000000000000
                     Position.Y = 4.000000000000000000
                     Margins.Right = 10.000000000000000000
                     Size.Width = 154.000000000000000000
-                    Size.Height = 32.000000000000000000
-                    Size.PlatformDefault = False
-                  end
-                  object Label4: TLabel
-                    Align = Left
-                    AutoSize = True
-                    Margins.Left = 10.000000000000000000
-                    Margins.Right = 10.000000000000000000
-                    Position.X = 301.000000000000000000
-                    Size.Width = 23.000000000000000000
-                    Size.Height = 40.000000000000000000
-                    Size.PlatformDefault = False
-                    TextSettings.WordWrap = False
-                    Text = 'UF:'
-                    TabOrder = 0
-                  end
-                  object Edit22: TEdit
-                    Touch.InteractiveGestures = [LongTap, DoubleTap]
-                    Align = Left
-                    TabOrder = 2
-                    Position.X = 334.000000000000000000
-                    Position.Y = 4.000000000000000000
-                    Margins.Right = 10.000000000000000000
-                    Size.Width = 131.000000000000000000
                     Size.Height = 32.000000000000000000
                     Size.PlatformDefault = False
                   end
@@ -495,7 +471,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 3
-                  object Edit8: TEdit
+                  object edt: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 1
@@ -581,7 +557,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 0
-                  object Edit9: TEdit
+                  object edtCEP: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 1
@@ -611,7 +587,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 1
-                  object Edit10: TEdit
+                  object edtEstado: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Left
                     TabOrder = 3
@@ -647,7 +623,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Text = 'Cidade:'
                     TabOrder = 1
                   end
-                  object Edit11: TEdit
+                  object edtCidade: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 0
@@ -664,7 +640,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 2
-                  object Edit12: TEdit
+                  object edtBairro: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 1
@@ -707,7 +683,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Text = 'Rua:'
                     TabOrder = 1
                   end
-                  object Edit17: TEdit
+                  object edtRua: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 3
@@ -729,7 +705,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Text = 'N'#186':'
                     TabOrder = 0
                   end
-                  object Edit18: TEdit
+                  object edtNumero: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Right
                     TabOrder = 2
@@ -741,9 +717,39 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Size.PlatformDefault = False
                   end
                 end
+                object ListBoxItem14: TListBoxItem
+                  Position.Y = 160.000000000000000000
+                  Size.Width = 790.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 5
+                  object edtCdIbge: TEdit
+                    Touch.InteractiveGestures = [LongTap, DoubleTap]
+                    Align = Client
+                    TabOrder = 2
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 668.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                  object Label4: TLabel
+                    Align = Left
+                    AutoSize = True
+                    Margins.Left = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Position.X = 10.000000000000000000
+                    Size.Width = 92.000000000000000000
+                    Size.Height = 40.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.WordWrap = False
+                    Text = 'C'#243'digo IBGE:'
+                    TabOrder = 0
+                  end
+                end
                 object ListBoxItem6: TListBoxItem
                   Selectable = False
-                  Position.Y = 160.000000000000000000
+                  Position.Y = 200.000000000000000000
                   Size.Width = 790.000000000000000000
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
@@ -808,7 +814,7 @@ inherited frmCadPessoa: TfrmCadPessoa
               CustomIcon = <
                 item
                 end>
-              IsSelected = False
+              IsSelected = True
               Size.Width = 85.000000000000000000
               Size.Height = 30.000000000000000000
               Size.PlatformDefault = False
@@ -828,26 +834,26 @@ inherited frmCadPessoa: TfrmCadPessoa
                 DefaultItemStyles.ItemStyle = ''
                 DefaultItemStyles.GroupHeaderStyle = ''
                 DefaultItemStyles.GroupFooterStyle = ''
-                Viewport.Width = 790.000000000000000000
+                Viewport.Width = 779.000000000000000000
                 Viewport.Height = 302.000000000000000000
                 object Telefones: TListBoxItem
                   TextSettings.HorzAlign = Center
                   StyledSettings = [Family, Size, Style, FontColor]
-                  Size.Width = 790.000000000000000000
+                  Size.Width = 779.000000000000000000
                   Size.Height = 45.000000000000000000
                   Size.PlatformDefault = False
-                  TabOrder = 8
+                  TabOrder = 7
                   Text = 'Telefones'
                   object Panel1: TPanel
                     Align = Client
-                    Size.Width = 790.000000000000000000
+                    Size.Width = 779.000000000000000000
                     Size.Height = 45.000000000000000000
                     Size.PlatformDefault = False
                     TabOrder = 0
                     OnClick = Panel1Click
                     object lbtelefones: TLabel
                       Align = Contents
-                      Size.Width = 790.000000000000000000
+                      Size.Width = 779.000000000000000000
                       Size.Height = 45.000000000000000000
                       Size.PlatformDefault = False
                       TextSettings.HorzAlign = Center
@@ -856,7 +862,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                     end
                     object spbTel: TSpeedButton
                       Align = Right
-                      Position.X = 744.000000000000000000
+                      Position.X = 733.000000000000000000
                       Size.Width = 46.000000000000000000
                       Size.Height = 46.000000000000000000
                       Size.PlatformDefault = False
@@ -871,9 +877,8 @@ inherited frmCadPessoa: TfrmCadPessoa
                   Size.Width = 779.000000000000000000
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
-                  TabOrder = 1
-                  Visible = False
-                  object Edit25: TEdit
+                  TabOrder = 0
+                  object edtdescricaoContato: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     StyleLookup = 'editstyle'
@@ -883,7 +888,6 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Size.Width = 677.000000000000000000
                     Size.Height = 32.000000000000000000
                     Size.PlatformDefault = False
-                    Visible = False
                   end
                   object Label10: TLabel
                     Align = Left
@@ -896,18 +900,16 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Size.PlatformDefault = False
                     TextSettings.WordWrap = False
                     Text = 'Descri'#231#227'o:'
-                    Visible = False
                     TabOrder = 0
                   end
                 end
                 object lbiNumTel: TListBoxItem
-                  Position.Y = 45.000000000000000000
-                  Size.Width = 790.000000000000000000
+                  Position.Y = 85.000000000000000000
+                  Size.Width = 779.000000000000000000
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
-                  TabOrder = 3
-                  Visible = False
-                  object Edit23: TEdit
+                  TabOrder = 2
+                  object telefone1: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Left
                     TabOrder = 4
@@ -943,7 +945,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Text = 'N'#250'mero2: '
                     TabOrder = 2
                   end
-                  object Edit24: TEdit
+                  object telefone2: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Left
                     TabOrder = 1
@@ -960,7 +962,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                     Margins.Top = 2.000000000000000000
                     Margins.Right = 10.000000000000000000
                     Margins.Bottom = 2.000000000000000000
-                    Position.X = 623.000000000000000000
+                    Position.X = 612.000000000000000000
                     Position.Y = 2.000000000000000000
                     Sides = [Top, Left, Bottom, Right]
                     Size.Width = 157.000000000000000000
@@ -974,19 +976,18 @@ inherited frmCadPessoa: TfrmCadPessoa
                   end
                 end
                 object lbiTelefones: TListBoxItem
-                  Position.Y = 45.000000000000000000
-                  Size.Width = 790.000000000000000000
+                  Position.Y = 125.000000000000000000
+                  Size.Width = 779.000000000000000000
                   Size.Height = 100.000000000000000000
                   Size.PlatformDefault = False
-                  TabOrder = 7
-                  Visible = False
+                  TabOrder = 6
                   object lvTelefones: TListView
                     ItemAppearanceClassName = 'TListItemAppearance'
                     ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
                     HeaderAppearanceClassName = 'TListHeaderObjects'
                     FooterAppearanceClassName = 'TListHeaderObjects'
                     Align = Client
-                    Size.Width = 790.000000000000000000
+                    Size.Width = 779.000000000000000000
                     Size.Height = 100.000000000000000000
                     Size.PlatformDefault = False
                     TabOrder = 0
@@ -995,22 +996,22 @@ inherited frmCadPessoa: TfrmCadPessoa
                 object ListBoxItem13: TListBoxItem
                   TextSettings.HorzAlign = Center
                   StyledSettings = [Family, Size, Style, FontColor]
-                  Position.Y = 45.000000000000000000
-                  Size.Width = 790.000000000000000000
+                  Position.Y = 225.000000000000000000
+                  Size.Width = 779.000000000000000000
                   Size.Height = 45.000000000000000000
                   Size.PlatformDefault = False
-                  TabOrder = 9
+                  TabOrder = 8
                   Text = 'E-mails'
                   object Panel2: TPanel
                     Align = Client
-                    Size.Width = 790.000000000000000000
+                    Size.Width = 779.000000000000000000
                     Size.Height = 45.000000000000000000
                     Size.PlatformDefault = False
                     TabOrder = 0
                     OnClick = Panel2Click
                     object lbEmail: TLabel
                       Align = Contents
-                      Size.Width = 790.000000000000000000
+                      Size.Width = 779.000000000000000000
                       Size.Height = 45.000000000000000000
                       Size.PlatformDefault = False
                       TextSettings.HorzAlign = Center
@@ -1019,7 +1020,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                     end
                     object spbEmail: TSpeedButton
                       Align = Right
-                      Position.X = 744.000000000000000000
+                      Position.X = 733.000000000000000000
                       Size.Width = 46.000000000000000000
                       Size.Height = 46.000000000000000000
                       Size.PlatformDefault = False
@@ -1029,46 +1030,13 @@ inherited frmCadPessoa: TfrmCadPessoa
                     end
                   end
                 end
-                object lbiDescEmail: TListBoxItem
+                object lbiCEmail: TListBoxItem
                   Position.Y = 270.000000000000000000
                   Size.Width = 779.000000000000000000
                   Size.Height = 40.000000000000000000
                   Size.PlatformDefault = False
-                  TabOrder = 0
-                  Visible = False
-                  object Edit28: TEdit
-                    Touch.InteractiveGestures = [LongTap, DoubleTap]
-                    Align = Client
-                    StyleLookup = 'editstyle'
-                    TabOrder = 1
-                    Margins.Top = 5.000000000000000000
-                    Margins.Right = 10.000000000000000000
-                    Size.Width = 677.000000000000000000
-                    Size.Height = 32.000000000000000000
-                    Size.PlatformDefault = False
-                  end
-                  object Label29: TLabel
-                    Align = Left
-                    AutoSize = True
-                    Margins.Left = 10.000000000000000000
-                    Margins.Right = 10.000000000000000000
-                    Position.X = 10.000000000000000000
-                    Size.Width = 72.000000000000000000
-                    Size.Height = 40.000000000000000000
-                    Size.PlatformDefault = False
-                    TextSettings.WordWrap = False
-                    Text = 'Descri'#231#227'o:'
-                    TabOrder = 0
-                  end
-                end
-                object lbiCEmail: TListBoxItem
-                  Position.Y = 310.000000000000000000
-                  Size.Width = 779.000000000000000000
-                  Size.Height = 40.000000000000000000
-                  Size.PlatformDefault = False
-                  TabOrder = 2
-                  Visible = False
-                  object Edit26: TEdit
+                  TabOrder = 1
+                  object edtEmail: TEdit
                     Touch.InteractiveGestures = [LongTap, DoubleTap]
                     Align = Client
                     TabOrder = 2
@@ -1111,19 +1079,18 @@ inherited frmCadPessoa: TfrmCadPessoa
                 end
                 object lbiEmail: TListBoxItem
                   Selectable = False
-                  Position.Y = 230.000000000000000000
-                  Size.Width = 790.000000000000000000
+                  Position.Y = 310.000000000000000000
+                  Size.Width = 779.000000000000000000
                   Size.Height = 100.000000000000000000
                   Size.PlatformDefault = False
-                  TabOrder = 6
-                  Visible = False
+                  TabOrder = 5
                   object lvEmail: TListView
                     ItemAppearanceClassName = 'TListItemAppearance'
                     ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
                     HeaderAppearanceClassName = 'TListHeaderObjects'
                     FooterAppearanceClassName = 'TListHeaderObjects'
                     Align = Client
-                    Size.Width = 790.000000000000000000
+                    Size.Width = 779.000000000000000000
                     Size.Height = 100.000000000000000000
                     Size.PlatformDefault = False
                     TabOrder = 0

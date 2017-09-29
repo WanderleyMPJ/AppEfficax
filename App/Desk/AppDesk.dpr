@@ -20,13 +20,13 @@ uses
   Classe.Cotacao in 'Class\Classe.Cotacao.pas',
   Classe.CItem in 'Class\Classe.CItem.pas',
   Classe.Produto in 'Class\Classe.Produto.pas';
+  Classe.Produto in 'Class\Classe.Produto.pas',
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
-  Application.CreateForm(TfrmOrcamento, frmOrcamento);
-  Application.CreateForm(TfrmCadProd, frmCadProd);
+  Application.CreateForm(TdmConnection, dmConnection);
   Application.Run;
 end.

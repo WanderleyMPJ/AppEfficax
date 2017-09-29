@@ -36,33 +36,33 @@ type
     lbNFAP: TLabel;
     lbDtFDtN: TLabel;
     swPesFisica: TSwitch;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit4: TEdit;
-    Edit5: TEdit;
+    nome_razsoc: TEdit;
+    nmfant_apelido: TEdit;
+    dtnasc_dtfund: TEdit;
+    cpf_cnpj: TEdit;
     lbCPFCNPJ: TLabel;
-    Edit6: TEdit;
+    suframa: TEdit;
     lbSuframa: TLabel;
-    Edit7: TEdit;
+    rg_inscest: TEdit;
     lbIERG: TLabel;
-    Edit8: TEdit;
+    edt: TEdit;
     lbIMTE: TLabel;
-    Edit9: TEdit;
+    edtCEP: TEdit;
     Label11: TLabel;
-    Edit10: TEdit;
+    edtEstado: TEdit;
     Label12: TLabel;
-    Edit12: TEdit;
+    edtBairro: TEdit;
     Label14: TLabel;
     spbEnd: TSpeedButton;
     spbCont: TSpeedButton;
     spbDoc: TSpeedButton;
     ListBoxItem17: TListBoxItem;
     Label19: TLabel;
-    Edit17: TEdit;
+    edtRua: TEdit;
     Label20: TLabel;
-    Edit18: TEdit;
+    edtNumero: TEdit;
     Label13: TLabel;
-    Edit11: TEdit;
+    edtCidade: TEdit;
     Label23: TLabel;
     Label24: TLabel;
     ctaDocumentos: TChangeTabAction;
@@ -70,9 +70,7 @@ type
     ctaContato: TChangeTabAction;
     lbiOGUF: TListBoxItem;
     Label1: TLabel;
-    Edit21: TEdit;
-    Label4: TLabel;
-    Edit22: TEdit;
+    oguf: TEdit;
     ListBoxItem6: TListBoxItem;
     CornerButton2: TCornerButton;
     tbiCont: TTabItem;
@@ -80,22 +78,19 @@ type
     ListBoxHeader5: TListBoxHeader;
     Label7: TLabel;
     lbiNumTel: TListBoxItem;
-    Edit23: TEdit;
+    telefone1: TEdit;
     Label8: TLabel;
     Label9: TLabel;
-    Edit24: TEdit;
+    telefone2: TEdit;
     lbiDescTel: TListBoxItem;
-    Edit25: TEdit;
+    edtdescricaoContato: TEdit;
     Label10: TLabel;
     lbiTelefones: TListBoxItem;
     lvTelefones: TListView;
     lbiEmail: TListBoxItem;
     lbiCEmail: TListBoxItem;
-    Edit26: TEdit;
+    edtEmail: TEdit;
     Label27: TLabel;
-    lbiDescEmail: TListBoxItem;
-    Edit28: TEdit;
-    Label29: TLabel;
     CornerButton4: TCornerButton;
     lvEmail: TListView;
     CornerButton3: TCornerButton;
@@ -117,6 +112,9 @@ type
     Switch3: TSwitch;
     ListBoxHeader1: TListBoxHeader;
     Label26: TLabel;
+    ListBoxItem14: TListBoxItem;
+    edtCdIbge: TEdit;
+    Label4: TLabel;
     procedure spbEndClick(Sender: TObject);
     procedure spbEndeClick(Sender: TObject);
     procedure spbDocClick(Sender: TObject);
@@ -182,7 +180,7 @@ begin
   if spbEmail.StyleLookup = 'arrowlefttoolbutton' then
   begin
     lbiEmail.Visible := False;
-    lbiDescEmail.Visible := False;
+   // lbiDescEmail.Visible := False;
     lbiCEmail.Visible := False;
     spbEmail.StyleLookup := 'arrowdowntoolbuttonborderedright';
   end
@@ -190,7 +188,7 @@ begin
   if spbEmail.StyleLookup = 'arrowdowntoolbuttonborderedright' then
   begin
    lbiEmail.Visible := true;
-   lbiDescEmail.Visible := true;
+  // lbiDescEmail.Visible := true;
    lbiCEmail.Visible := true;
    spbEmail.StyleLookup := 'arrowlefttoolbutton';
   end;

@@ -52718,9 +52718,10 @@ object frmHome: TfrmHome
           Size.PlatformDefault = False
           StyleLookup = 'cbAtendimentoStyle1'
           TabOrder = 0
-          Text = 'Atendimentos'
+          Text = 'TestarCad'
           XRadius = 3.000000000000000000
           YRadius = 3.000000000000000000
+          OnClick = cbAtendimentoClick
         end
       end
       object Layout20: TLayout

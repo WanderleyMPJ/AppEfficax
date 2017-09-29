@@ -34,8 +34,8 @@ type TPessoa = class
   {Protected declarations}
   public
   {Public declarations}
-  property endereco : Tlist(TP_Endereco) read Fendereco write Setendereco;
-  property contato : TList(TP_Contato) read Fcontato write Setcontato;
+  property endereco : TList read Fendereco write Setendereco;
+  property contato : TList read Fcontato write Setcontato;
   property id : integer read Fid write Setid;
   property tp_peddoa : integer read Ftp_peddoa write Settp_peddoa;
   property nome_razsoc : string read Fnome_razsoc write Setnome_razsoc;

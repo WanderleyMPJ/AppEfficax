@@ -30,7 +30,7 @@ type TCotacao = Class
   property pv_entrega : string read Fpv_entrega write Setpv_entrega;
   property desconto : string read Fdesconto write Setdesconto;
   property vl_total : string read Fvl_total write Setvl_total;
-  property listItem : TList(TC_Item) read FlistItem write SetlistItem;
+  property listItem : TList read FlistItem write SetlistItem;
   published
 End;
 

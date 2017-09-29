@@ -32,14 +32,12 @@ inherited frmCadProd: TfrmCadProd
     inherited TabControl1: TTabControl
       Size.Width = 744.000000000000000000
       Size.Height = 457.000000000000000000
-      TabIndex = 1
       Sizes = (
         744s
         457s
         744s
         457s)
       inherited tbiLista: TTabItem
-        IsSelected = False
         ExplicitSize.cx = 12.000000000000000000
         ExplicitSize.cy = 12.000000000000000000
         inherited ToolBar2: TToolBar
@@ -52,12 +50,17 @@ inherited frmCadProd: TfrmCadProd
           end
         end
         inherited ListView1: TListView
+          ItemAppearanceClassName = 'TMultiDetailItemAppearance'
           Size.Width = 724.000000000000000000
           Size.Height = 391.000000000000000000
+          ItemAppearanceObjects.ItemEditObjects.Text.Width = 647.000000000000000000
+          ItemAppearanceObjects.ItemEditObjects.Text.Height = 52.000000000000000000
+          ItemAppearanceObjects.ItemEditObjects.GlyphButton.Width = 32.000000000000000000
+          ItemAppearanceObjects.ItemEditObjects.GlyphButton.Height = 30.000000000000000000
+          ItemAppearanceObjects.ItemEditObjects.GlyphButton.PlaceOffset.X = -2.000000000000000000
         end
       end
       inherited tbiFormulario: TTabItem
-        IsSelected = True
         ExplicitSize.cx = 12.000000000000000000
         ExplicitSize.cy = 12.000000000000000000
         inherited lytFormulario: TLayout
@@ -316,5 +319,55 @@ inherited frmCadProd: TfrmCadProd
   inherited ActionList1: TActionList
     Left = 672
     Top = 440
+  end
+  object MemTable: TFDMemTable
+    FieldDefs = <>
+    CachedUpdates = True
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 632
+    Top = 112
+    object MemTableID: TIntegerField
+      FieldName = 'ID'
+    end
+    object MemTableDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+    end
+    object MemTableVALOR: TStringField
+      FieldName = 'VALOR'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = MemTable
+    ScopeMappings = <>
+    Left = 560
+    Top = 112
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 476
+    Top = 133
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      Control = ListView1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = dmConnection.fdqrGeral
+    ScopeMappings = <>
+    Left = 360
+    Top = 240
   end
 end
