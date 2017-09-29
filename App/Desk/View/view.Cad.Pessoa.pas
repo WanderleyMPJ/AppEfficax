@@ -111,6 +111,7 @@ type
     spbTel: TSpeedButton;
     spbEmail: TSpeedButton;
 <<<<<<< HEAD
+<<<<<<< HEAD
     ListBoxItem11: TListBoxItem;
     Label5: TLabel;
     Switch1: TSwitch;
@@ -128,6 +129,8 @@ type
 >>>>>>> parent of 6157654... 22/09/2017
 =======
 >>>>>>> parent of 5e66f97... 29/09/2017
+=======
+>>>>>>> parent of 6157654... 22/09/2017
     procedure spbEndClick(Sender: TObject);
     procedure spbEndeClick(Sender: TObject);
     procedure spbDocClick(Sender: TObject);

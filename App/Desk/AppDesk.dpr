@@ -14,6 +14,7 @@ uses
   view.Home in 'View\view.Home.pas' {frmHome},
   view.Orcamento in 'View\view.Orcamento.pas' {frmOrcamento},
 <<<<<<< HEAD
+<<<<<<< HEAD
   view.Cad.Produtos in 'View\view.Cad.Produtos.pas' {frmCadProd},
   Classe.Pessoa in 'Class\Classe.Pessoa.pas',
   Classe.PContato in 'Class\Classe.PContato.pas',
@@ -29,6 +30,9 @@ uses
 =======
   Classe.Produto in 'Class\Classe.Produto.pas';
 >>>>>>> parent of 5e66f97... 29/09/2017
+=======
+  view.Cad.Produtos in 'View\view.Cad.Produtos.pas' {frmCadProd};
+>>>>>>> parent of 6157654... 22/09/2017
 
 {$R *.res}
 

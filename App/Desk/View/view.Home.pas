@@ -25,6 +25,7 @@ type
     ImageList1: TImageList;
     CornerButton1: TCornerButton;
 <<<<<<< HEAD
+<<<<<<< HEAD
     CornerButton2: TCornerButton;
 <<<<<<< HEAD
     procedure cbAtendimentoClick(Sender: TObject);
@@ -32,6 +33,8 @@ type
 >>>>>>> parent of 6157654... 22/09/2017
 =======
 >>>>>>> parent of 5e66f97... 29/09/2017
+=======
+>>>>>>> parent of 6157654... 22/09/2017
   private
     { Private declarations }
   public

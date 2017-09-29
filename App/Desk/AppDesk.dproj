@@ -356,6 +356,7 @@
             <FormType>fmx</FormType>
         </DCCReference>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <DCCReference Include="Class\Classe.Pessoa.pas"/>
         <DCCReference Include="Class\Classe.PContato.pas"/>
         <DCCReference Include="Class\Classe.PEndereco.pas"/>
@@ -372,6 +373,8 @@
 >>>>>>> parent of 6157654... 22/09/2017
 =======
 >>>>>>> parent of 5e66f97... 29/09/2017
+=======
+>>>>>>> parent of 6157654... 22/09/2017
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -399,6 +402,7 @@
             </Delphi.Personality>
             <Deployment Version="3">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
                     <Platform Name="Android">
                         <RemoteName>ic_launcher.png</RemoteName>
@@ -423,6 +427,10 @@
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+>>>>>>> parent of 6157654... 22/09/2017
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -431,6 +439,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
@@ -445,6 +454,10 @@
                     <Platform Name="Android">
                         <RemoteName>libAppDesk.so</RemoteName>
 >>>>>>> parent of 5e66f97... 29/09/2017
+=======
+                <DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule">
+                    <Platform Name="iOSSimulator">
+>>>>>>> parent of 6157654... 22/09/2017
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -453,6 +466,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <DeployFile LocalName="Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
@@ -499,6 +513,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+=======
+>>>>>>> parent of 6157654... 22/09/2017
 =======
 >>>>>>> parent of 6157654... 22/09/2017
                 <DeployFile LocalName="Win32\Debug\AppDesk.exe" Configuration="Debug" Class="ProjectOutput">
