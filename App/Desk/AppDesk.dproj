@@ -362,6 +362,7 @@
         <DCCReference Include="Class\Classe.Cotacao.pas"/>
         <DCCReference Include="Class\Classe.CItem.pas"/>
         <DCCReference Include="Class\Classe.Produto.pas"/>
+<<<<<<< HEAD
         <DCCReference Include="Conection\dm.Connection.pas">
             <Form>dmConnection</Form>
             <FormType>dfm</FormType>
