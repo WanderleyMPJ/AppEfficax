@@ -24,8 +24,11 @@ type
     Layout24: TLayout;
     ImageList1: TImageList;
     CornerButton1: TCornerButton;
+<<<<<<< HEAD
     CornerButton2: TCornerButton;
     procedure cbAtendimentoClick(Sender: TObject);
+=======
+>>>>>>> parent of 6157654... 22/09/2017
   private
     { Private declarations }
   public

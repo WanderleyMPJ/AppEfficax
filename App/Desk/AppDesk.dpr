@@ -13,6 +13,7 @@ uses
   view.Frm.Os in 'View\view.Frm.Os.pas' {frmFormOs},
   view.Home in 'View\view.Home.pas' {frmHome},
   view.Orcamento in 'View\view.Orcamento.pas' {frmOrcamento},
+<<<<<<< HEAD
   view.Cad.Produtos in 'View\view.Cad.Produtos.pas' {frmCadProd},
   Classe.Pessoa in 'Class\Classe.Pessoa.pas',
   Classe.PContato in 'Class\Classe.PContato.pas',
@@ -21,6 +22,9 @@ uses
   Classe.CItem in 'Class\Classe.CItem.pas',
   Classe.Produto in 'Class\Classe.Produto.pas',
   dm.Connection in 'Conection\dm.Connection.pas' {dmConnection: TDataModule};
+=======
+  view.Cad.Produtos in 'View\view.Cad.Produtos.pas' {frmCadProd};
+>>>>>>> parent of 6157654... 22/09/2017
 
 {$R *.res}
 

@@ -13,19 +13,19 @@ uses
 type
   TfrmOrcamento = class(TfrmCadPadrao)
     ListBox1: TListBox;
-    lbiCliente: TListBoxItem;
-    lbiProduto: TListBoxItem;
-    lbiValidade: TListBoxItem;
-    lbiPrazo: TListBoxItem;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem3: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
     lbCliente: TLabel;
     lbServicos: TLabel;
     lbValidade: TLabel;
     lbPrazo: TLabel;
-    lbiTotal: TListBoxItem;
+    ListBoxItem5: TListBoxItem;
     lbValorTotal: TLabel;
-    lbiDesconto: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
     lbDesconto: TLabel;
-    lbiListProds: TListBoxItem;
+    ListBoxItem7: TListBoxItem;
     lvServicos: TListView;
     ListBoxGroupHeader1: TListBoxGroupHeader;
     Edit2: TEdit;
@@ -60,7 +60,6 @@ var
 implementation
 
 {$R *.fmx}
-{$R *.LgXhdpiTb.fmx ANDROID}
 
 procedure TfrmOrcamento.SearchEditButton1Click(Sender: TObject);
 begin

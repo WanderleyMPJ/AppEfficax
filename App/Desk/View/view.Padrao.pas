@@ -71,7 +71,8 @@ var
 
 implementation
 
-
+uses
+  Winapi.Windows;
 
 {$R *.fmx}
 
