@@ -229,7 +229,7 @@ object frmCadPadrao: TfrmCadPadrao
         end
         object ListView1: TListView
           ItemAppearanceClassName = 'TListItemAppearance'
-          ItemEditAppearanceClassName = 'TListItemDeleteAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
           HeaderAppearanceClassName = 'TListHeaderObjects'
           FooterAppearanceClassName = 'TListHeaderObjects'
           Align = Client

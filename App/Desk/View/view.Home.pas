@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.ExtCtrls, System.ImageList,
-  FMX.ImgList, dm.Connection;
+  FMX.ImgList;
 
 type
   TfrmHome = class(TForm)
@@ -26,9 +26,12 @@ type
     CornerButton1: TCornerButton;
 <<<<<<< HEAD
     CornerButton2: TCornerButton;
+<<<<<<< HEAD
     procedure cbAtendimentoClick(Sender: TObject);
 =======
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+>>>>>>> parent of 5e66f97... 29/09/2017
   private
     { Private declarations }
   public
@@ -41,10 +44,5 @@ var
 implementation
 
 {$R *.fmx}
-
-procedure TfrmHome.cbAtendimentoClick(Sender: TObject);
-begin
-dmConnection.BuscaProduto;
-end;
 
 end.

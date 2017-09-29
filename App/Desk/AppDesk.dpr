@@ -20,17 +20,22 @@ uses
   Classe.PEndereco in 'Class\Classe.PEndereco.pas',
   Classe.Cotacao in 'Class\Classe.Cotacao.pas',
   Classe.CItem in 'Class\Classe.CItem.pas',
+<<<<<<< HEAD
   Classe.Produto in 'Class\Classe.Produto.pas',
   dm.Connection in 'Conection\dm.Connection.pas' {dmConnection: TDataModule};
 =======
   view.Cad.Produtos in 'View\view.Cad.Produtos.pas' {frmCadProd};
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+  Classe.Produto in 'Class\Classe.Produto.pas';
+>>>>>>> parent of 5e66f97... 29/09/2017
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
-  Application.CreateForm(TdmConnection, dmConnection);
+  Application.CreateForm(TfrmOrcamento, frmOrcamento);
+  Application.CreateForm(TfrmCadProd, frmCadProd);
   Application.Run;
 end.

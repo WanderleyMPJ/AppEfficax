@@ -70,22 +70,5 @@ inherited frmOs: TfrmOs
         end
       end
     end
-    inherited ppBusca: TPopup
-      inherited TabControl2: TTabControl
-        Sizes = (
-          521s
-          417s
-          521s
-          417s)
-        inherited tbiBusca: TTabItem
-          ExplicitSize.cx = 12.000000000000000000
-          ExplicitSize.cy = 12.000000000000000000
-        end
-        inherited tbiMensagem: TTabItem
-          ExplicitSize.cx = 12.000000000000000000
-          ExplicitSize.cy = 12.000000000000000000
-        end
-      end
-    end
   end
 end

@@ -4,12 +4,12 @@ interface
 type TProdutos = class
   private
     Fvalor: string;
-    Fcalc_hr: integer;
+    Fcalc_hr: string;
     Fdescrim_prod: string;
     Fid: integer;
     Ftipo: integer;
     Fdescricao_prod: string;
-    procedure Setcalc_hr(const Value: integer);
+    procedure Setcalc_hr(const Value: string);
     procedure Setdescricao_prod(const Value: string);
     procedure Setdescrim_prod(const Value: string);
     procedure Setid(const Value: integer);
@@ -24,7 +24,7 @@ type TProdutos = class
   property valor : string read Fvalor write Setvalor;
   property descrim_prod : string read Fdescrim_prod write Setdescrim_prod;
   property tipo : integer read Ftipo write Settipo;
-  property calc_hr : integer read Fcalc_hr write Setcalc_hr;
+  property calc_hr : string read Fcalc_hr write Setcalc_hr;
   published
 
 end;
@@ -33,7 +33,7 @@ implementation
 
 { TProdutos }
 
-procedure TProdutos.Setcalc_hr(const Value: integer);
+procedure TProdutos.Setcalc_hr(const Value: string);
 begin
   Fcalc_hr := Value;
 end;

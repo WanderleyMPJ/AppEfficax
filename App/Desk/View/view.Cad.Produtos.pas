@@ -8,12 +8,7 @@ uses
   view.Padrao, FMX.ListView.Types, FMX.ListView.Appearances,
   FMX.ListView.Adapters.Base, FMX.ListBox, FMX.Layouts, System.Actions,
   FMX.ActnList, FMX.TabControl, FMX.Objects, FMX.ListView, FMX.Edit,
-  FMX.Controls.Presentation, FMX.ScrollBox, FMX.Memo, dm.Connection,
-  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
-  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
-  System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt,
-  Fmx.Bind.DBEngExt, Data.Bind.Components, Data.Bind.DBScope, Data.DB,
-  FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+  FMX.Controls.Presentation, FMX.ScrollBox, FMX.Memo;
 
 type
   TfrmCadProd = class(TfrmCadPadrao)
@@ -38,16 +33,7 @@ type
     lbPorHora: TLabel;
     swPorHora: TSwitch;
     lbghCadProdServ: TListBoxGroupHeader;
-    MemTable: TFDMemTable;
-    MemTableID: TIntegerField;
-    MemTableDESCRICAO: TStringField;
-    MemTableVALOR: TStringField;
-    BindSourceDB1: TBindSourceDB;
-    BindingsList1: TBindingsList;
-    BindSourceDB2: TBindSourceDB;
-    LinkListControlToField1: TLinkListControlToField;
     procedure swServicoClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,27 +46,6 @@ var
 implementation
 
 {$R *.fmx}
-
-procedure TfrmCadProd.FormCreate(Sender: TObject);
-begin
-  inherited;
-  with DmConnection do
-  begin
-    BuscaProduto;
-
-   (*
-      MemTable.Active;
-      MemTable.Edit;
-      MemTable.Open;
-      MemTableID.Value := fdqrGeral.FieldByName('ID').AsInteger;
-      MemTableDescricao.Value := fdqrGeral.FieldByName('descricao_prod').AsAnsiString;
-      MemTableValor.Value := fdqrGeral.FieldByName('valor').AsAnsiString;
-      MemTable.Close;
-
-   *)
-  end;
-
-end;
 
 procedure TfrmCadProd.swServicoClick(Sender: TObject);
 begin
