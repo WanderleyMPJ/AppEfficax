@@ -19,8 +19,8 @@ uses
   Classe.PEndereco in 'Class\Classe.PEndereco.pas',
   Classe.Cotacao in 'Class\Classe.Cotacao.pas',
   Classe.CItem in 'Class\Classe.CItem.pas',
-  Classe.Produto in 'Class\Classe.Produto.pas';
   Classe.Produto in 'Class\Classe.Produto.pas',
+  dm.Connection in 'Conection\dm.Connection.pas' {dmConnection: TDataModule};
 
 {$R *.res}
 
