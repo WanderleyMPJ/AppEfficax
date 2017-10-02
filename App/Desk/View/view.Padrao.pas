@@ -9,7 +9,7 @@ uses
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
   FMX.Edit, FMX.ListBox, FMX.StdCtrls, FMX.ListView, FMX.TabControl,
   FMX.Controls.Presentation, FMX.Layouts, System.Actions, FMX.ActnList,
-  view.Busca, FMX.Objects, view.Frm.Os;
+  view.Busca, FMX.Objects;
 
 type
   TfrmCadPadrao = class(TForm)
@@ -39,12 +39,8 @@ type
     ctaLista: TChangeTabAction;
     lytFormulario: TLayout;
     ppBusca: TPopup;
-    recPopUp: TRectangle;
     lytCBusca: TLayout;
-    TabControl2: TTabControl;
-    tbiBusca: TTabItem;
-    tbiMensagem: TTabItem;
-    recMensagem: TRectangle;
+    recPopUp: TRectangle;
     procedure ListView1ItemClick(const Sender: TObject;
       const AItem: TListViewItem);
     procedure spbEdtClick(Sender: TObject);
@@ -63,7 +59,6 @@ type
     { Public declarations }
     FActiveForm : TForm;
     procedure ChamaBusca;
-    procedure ChamaOS;
   end;
 
 var
@@ -101,27 +96,6 @@ begin
   recPopUp.Align := TAlignLayout.Contents;
   ppBusca.BringToFront;
   ppBusca.visible := True;
-  TabControl2.ActiveTab := tbiBusca;
-end;
-
-procedure TfrmCadPadrao.ChamaOS;
-var
- lytBase : TComponent;
-begin
-  if Assigned(FActiveForm) then
-   begin
-    if FActiveForm.ClassType = TfrmFormOs then
-     exit
-    else
-      begin
-        FActiveForm.DisposeOf;
-        FActiveForm := nil;
-      end;
-   end;
-    Application.CreateForm(TfrmFormOs ,FActiveForm);
-    lytBase := FActiveForm.FindComponent('lytBaseOS');
-      if Assigned(lytBase) then
-        lytFormulario.AddObject(TLayout(lytBase));
 end;
 
 procedure TfrmCadPadrao.AlterEdt(b : boolean);

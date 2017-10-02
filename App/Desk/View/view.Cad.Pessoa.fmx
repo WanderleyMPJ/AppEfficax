@@ -32,23 +32,27 @@ inherited frmCadPessoa: TfrmCadPessoa
     inherited TabControl1: TTabControl
       Size.Width = 790.000000000000000000
       Size.Height = 653.000000000000000000
-      TabIndex = 1
       Sizes = (
         790s
         653s
         790s
         653s)
       inherited tbiLista: TTabItem
-        IsSelected = False
         ExplicitSize.cx = 12.000000000000000000
         ExplicitSize.cy = 12.000000000000000000
         inherited ToolBar2: TToolBar
           Size.Width = 790.000000000000000000
+          inherited ComboBox1: TComboBox
+            Position.Y = 7.000000000000000000
+            Size.Height = 32.000000000000000000
+          end
           inherited Edit1: TEdit
             Size.Width = 400.000000000000000000
+            Size.Height = 32.000000000000000000
           end
           inherited SpeedButton7: TSpeedButton
             Position.X = 734.000000000000000000
+            Size.Height = 46.000000000000000000
           end
         end
         inherited ListView1: TListView
@@ -57,7 +61,6 @@ inherited frmCadPessoa: TfrmCadPessoa
         end
       end
       inherited tbiFormulario: TTabItem
-        IsSelected = True
         ExplicitSize.cx = 12.000000000000000000
         ExplicitSize.cy = 12.000000000000000000
         inherited lytFormulario: TLayout
@@ -78,7 +81,7 @@ inherited frmCadPessoa: TfrmCadPessoa
             DefaultItemStyles.GroupHeaderStyle = ''
             DefaultItemStyles.GroupFooterStyle = ''
             Viewport.Width = 790.000000000000000000
-            Viewport.Height = 225.000000000000000000
+            Viewport.Height = 179.000000000000000000
             object ListBoxItem1: TListBoxItem
               Selectable = False
               Size.Width = 790.000000000000000000
@@ -259,7 +262,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                 DefaultItemStyles.GroupHeaderStyle = ''
                 DefaultItemStyles.GroupFooterStyle = ''
                 Viewport.Width = 790.000000000000000000
-                Viewport.Height = 265.000000000000000000
+                Viewport.Height = 219.000000000000000000
                 object ListBoxItem5: TListBoxItem
                   Size.Width = 790.000000000000000000
                   Size.Height = 40.000000000000000000
@@ -490,7 +493,7 @@ inherited frmCadPessoa: TfrmCadPessoa
                 DefaultItemStyles.GroupHeaderStyle = ''
                 DefaultItemStyles.GroupFooterStyle = ''
                 Viewport.Width = 790.000000000000000000
-                Viewport.Height = 378.000000000000000000
+                Viewport.Height = 332.000000000000000000
                 object ListBoxItem9: TListBoxItem
                   Size.Width = 790.000000000000000000
                   Size.Height = 40.000000000000000000
@@ -749,6 +752,7 @@ inherited frmCadPessoa: TfrmCadPessoa
 =======
                 Viewport.Width = 790.000000000000000000
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 5e66f97... 29/09/2017
                 Viewport.Height = 302.000000000000000000
 =======
@@ -758,6 +762,9 @@ inherited frmCadPessoa: TfrmCadPessoa
 =======
                 Viewport.Height = 378.000000000000000000
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+                Viewport.Height = 332.000000000000000000
+>>>>>>> parent of 975c066... 19/09
                 object Telefones: TListBoxItem
                   TextSettings.HorzAlign = Center
                   StyledSettings = [Family, Size, Style, FontColor]
@@ -1086,23 +1093,6 @@ inherited frmCadPessoa: TfrmCadPessoa
               end
             end
           end
-        end
-      end
-    end
-    inherited ppBusca: TPopup
-      inherited TabControl2: TTabControl
-        Sizes = (
-          521s
-          417s
-          521s
-          417s)
-        inherited tbiBusca: TTabItem
-          ExplicitSize.cx = 86.000000000000000000
-          ExplicitSize.cy = 30.000000000000000000
-        end
-        inherited tbiMensagem: TTabItem
-          ExplicitSize.cx = 86.000000000000000000
-          ExplicitSize.cy = 30.000000000000000000
         end
       end
     end

@@ -312,7 +312,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="View\view.Teste.pas">
-            <Form>fom4</Form>
+            <Form>Form4</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="View\view.Main.pas">
@@ -335,6 +335,7 @@
             <Form>frmBusca</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+<<<<<<< HEAD
         <DCCReference Include="View\view.Cont.Os.pas">
             <Form>frmOs</Form>
             <FormType>fmx</FormType>
@@ -375,6 +376,8 @@
 >>>>>>> parent of 5e66f97... 29/09/2017
 =======
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+>>>>>>> parent of 975c066... 19/09
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

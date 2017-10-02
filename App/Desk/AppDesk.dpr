@@ -3,11 +3,12 @@ program AppDesk;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  view.Teste in 'View\view.Teste.pas' {fom4},
+  view.Teste in 'View\view.Teste.pas' {Form4},
   view.Main in 'View\view.Main.pas' {frmMain},
   view.Padrao in 'View\view.Padrao.pas' {frmCadPadrao},
   view.Cad.Pessoa in 'View\view.Cad.Pessoa.pas' {frmCadPessoa},
   view.Cad.User in 'View\view.Cad.User.pas' {frmCadUser},
+<<<<<<< HEAD
   view.Busca in 'View\view.Busca.pas' {frmBusca},
   view.Cont.Os in 'View\view.Cont.Os.pas' {frmOs},
   view.Frm.Os in 'View\view.Frm.Os.pas' {frmFormOs},
@@ -33,13 +34,14 @@ uses
 =======
   view.Cad.Produtos in 'View\view.Cad.Produtos.pas' {frmCadProd};
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+  view.Busca in 'View\view.Busca.pas' {frmBusca};
+>>>>>>> parent of 975c066... 19/09
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
-  Application.CreateForm(TfrmOrcamento, frmOrcamento);
-  Application.CreateForm(TfrmCadProd, frmCadProd);
   Application.Run;
 end.

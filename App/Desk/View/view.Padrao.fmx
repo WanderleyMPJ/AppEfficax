@@ -138,7 +138,7 @@ object frmCadPadrao: TfrmCadPadrao
       Size.Width = 640.000000000000000000
       Size.Height = 434.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 1
       TabPosition = None
       Sizes = (
@@ -150,7 +150,7 @@ object frmCadPadrao: TfrmCadPadrao
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 12.000000000000000000
         Size.Height = 12.000000000000000000
         Size.PlatformDefault = False
@@ -170,9 +170,8 @@ object frmCadPadrao: TfrmCadPadrao
           object ComboBox1: TComboBox
             Align = Left
             Position.X = 55.000000000000000000
-            Position.Y = 7.000000000000000000
             Size.Width = 146.000000000000000000
-            Size.Height = 32.000000000000000000
+            Size.Height = 46.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 2
           end
@@ -209,7 +208,7 @@ object frmCadPadrao: TfrmCadPadrao
             Margins.Top = 7.000000000000000000
             Margins.Right = 10.000000000000000000
             Size.Width = 250.000000000000000000
-            Size.Height = 32.000000000000000000
+            Size.Height = 39.000000000000000000
             Size.PlatformDefault = False
           end
           object SpeedButton7: TSpeedButton
@@ -221,7 +220,7 @@ object frmCadPadrao: TfrmCadPadrao
             Position.X = 584.000000000000000000
             Position.Y = 2.000000000000000000
             Size.Width = 46.000000000000000000
-            Size.Height = 46.000000000000000000
+            Size.Height = 42.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'searchtoolbutton'
             Text = 'SpeedButton7'
@@ -248,7 +247,7 @@ object frmCadPadrao: TfrmCadPadrao
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 12.000000000000000000
         Size.Height = 12.000000000000000000
         Size.PlatformDefault = False
@@ -272,63 +271,16 @@ object frmCadPadrao: TfrmCadPadrao
       Size.Height = 417.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
-      object TabControl2: TTabControl
+      object lytCBusca: TLayout
         Align = Client
-        Size.Width = 521.000000000000000000
-        Size.Height = 417.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 517.000000000000000000
+        Size.Height = 413.000000000000000000
         Size.PlatformDefault = False
-        TabIndex = 1
         TabOrder = 0
-        TabPosition = None
-        Sizes = (
-          521s
-          417s
-          521s
-          417s)
-        object tbiBusca: TTabItem
-          CustomIcon = <
-            item
-            end>
-          IsSelected = False
-          Size.Width = 12.000000000000000000
-          Size.Height = 12.000000000000000000
-          Size.PlatformDefault = False
-          StyleLookup = ''
-          TabOrder = 0
-          Text = 'tbiBusca'
-          ExplicitSize.cx = 12.000000000000000000
-          ExplicitSize.cy = 12.000000000000000000
-          object lytCBusca: TLayout
-            Align = Client
-            Size.Width = 521.000000000000000000
-            Size.Height = 417.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 0
-          end
-        end
-        object tbiMensagem: TTabItem
-          CustomIcon = <
-            item
-            end>
-          IsSelected = True
-          Size.Width = 12.000000000000000000
-          Size.Height = 12.000000000000000000
-          Size.PlatformDefault = False
-          StyleLookup = ''
-          TabOrder = 0
-          Text = 'tbiMensagem'
-          ExplicitSize.cx = 12.000000000000000000
-          ExplicitSize.cy = 12.000000000000000000
-          object recMensagem: TRectangle
-            Align = Client
-            Fill.Color = xFF121211
-            Opacity = 0.000000000000000000
-            Size.Width = 521.000000000000000000
-            Size.Height = 417.000000000000000000
-            Size.PlatformDefault = False
-            OnClick = recPopUpClick
-          end
-        end
       end
     end
     object recPopUp: TRectangle

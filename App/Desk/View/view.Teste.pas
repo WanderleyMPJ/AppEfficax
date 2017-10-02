@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, view.Padrao;
 
 type
-  Tfom4 = class(TForm)
+  TForm4 = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  fom4: Tfom4;
+  Form4: TForm4;
 
 implementation
 
