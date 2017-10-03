@@ -24,6 +24,7 @@ uses
   Classe.CItem in 'Class\Classe.CItem.pas',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Classe.Produto in 'Class\Classe.Produto.pas',
   dm.Connection in 'Conection\dm.Connection.pas' {dmConnection: TDataModule};
 =======
@@ -41,6 +42,9 @@ uses
 =======
   Classe.Produto in 'Class\Classe.Produto.pas';
 >>>>>>> parent of 5e66f97... 29/09/2017
+=======
+  Classe.Produto in 'Class\Classe.Produto.pas';
+>>>>>>> parent of 5e66f97... 29/09/2017
 
 {$R *.res}
 
@@ -48,6 +52,11 @@ begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  Application.CreateForm(TfrmOrcamento, frmOrcamento);
+  Application.CreateForm(TfrmCadProd, frmCadProd);
+>>>>>>> parent of 5e66f97... 29/09/2017
 =======
   Application.CreateForm(TfrmOrcamento, frmOrcamento);
   Application.CreateForm(TfrmCadProd, frmCadProd);
