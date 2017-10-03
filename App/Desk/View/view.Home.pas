@@ -28,6 +28,7 @@ type
 <<<<<<< HEAD
     CornerButton2: TCornerButton;
 <<<<<<< HEAD
+<<<<<<< HEAD
     procedure cbAtendimentoClick(Sender: TObject);
 =======
 >>>>>>> parent of 6157654... 22/09/2017
@@ -35,6 +36,8 @@ type
 >>>>>>> parent of 5e66f97... 29/09/2017
 =======
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+>>>>>>> parent of 5e66f97... 29/09/2017
   private
     { Private declarations }
   public

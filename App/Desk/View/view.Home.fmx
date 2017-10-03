@@ -52702,6 +52702,7 @@ object frmHome: TfrmHome
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           Text = 'TestarCad'
 =======
           Text = 'Novo Atendimento'
@@ -52712,6 +52713,9 @@ object frmHome: TfrmHome
 =======
           Text = 'Novo Atendimento'
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+          Text = 'Atendimentos'
+>>>>>>> parent of 5e66f97... 29/09/2017
           XRadius = 3.000000000000000000
           YRadius = 3.000000000000000000
         end

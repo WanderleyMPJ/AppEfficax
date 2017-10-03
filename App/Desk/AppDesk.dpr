@@ -23,6 +23,7 @@ uses
   Classe.Cotacao in 'Class\Classe.Cotacao.pas',
   Classe.CItem in 'Class\Classe.CItem.pas',
 <<<<<<< HEAD
+<<<<<<< HEAD
   Classe.Produto in 'Class\Classe.Produto.pas',
   dm.Connection in 'Conection\dm.Connection.pas' {dmConnection: TDataModule};
 =======
@@ -37,11 +38,19 @@ uses
 =======
   view.Busca in 'View\view.Busca.pas' {frmBusca};
 >>>>>>> parent of 975c066... 19/09
+=======
+  Classe.Produto in 'Class\Classe.Produto.pas';
+>>>>>>> parent of 5e66f97... 29/09/2017
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
+<<<<<<< HEAD
+=======
+  Application.CreateForm(TfrmOrcamento, frmOrcamento);
+  Application.CreateForm(TfrmCadProd, frmCadProd);
+>>>>>>> parent of 5e66f97... 29/09/2017
   Application.Run;
 end.

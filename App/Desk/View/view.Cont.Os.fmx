@@ -1,0 +1,74 @@
+inherited frmOs: TfrmOs
+  Caption = 'frmCadPadrao1'
+  ClientHeight = 524
+  ClientWidth = 778
+  DesignerMasterStyle = 0
+  inherited lytBase: TLayout
+    Size.Width = 778.000000000000000000
+    Size.Height = 524.000000000000000000
+    inherited ToolBar1: TToolBar
+      Size.Width = 778.000000000000000000
+      inherited lbTitulo: TLabel
+        Size.Width = 778.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Atendimentos'
+      end
+      inherited spbAdd: TSpeedButton
+        Position.X = 602.000000000000000000
+      end
+      inherited spbEdt: TSpeedButton
+        Position.X = 650.000000000000000000
+      end
+      inherited spbCanc: TSpeedButton
+        Position.X = 506.000000000000000000
+      end
+      inherited spbExc: TSpeedButton
+        Position.X = 554.000000000000000000
+      end
+      inherited spbSalv: TSpeedButton
+        Position.X = 698.000000000000000000
+      end
+    end
+    inherited TabControl1: TTabControl
+      Size.Width = 778.000000000000000000
+      Size.Height = 478.000000000000000000
+      TabIndex = 1
+      Sizes = (
+        778s
+        478s
+        778s
+        478s)
+      inherited tbiLista: TTabItem
+        IsSelected = False
+        ExplicitSize.cx = 12.000000000000000000
+        ExplicitSize.cy = 12.000000000000000000
+        inherited ToolBar2: TToolBar
+          Size.Width = 778.000000000000000000
+          inherited Edit1: TEdit
+            Size.Width = 388.000000000000000000
+          end
+          inherited SpeedButton7: TSpeedButton
+            Position.X = 722.000000000000000000
+          end
+        end
+        inherited ListView1: TListView
+          Size.Width = 758.000000000000000000
+          Size.Height = 412.000000000000000000
+        end
+      end
+      inherited tbiFormulario: TTabItem
+        IsSelected = True
+        ExplicitSize.cx = 12.000000000000000000
+        ExplicitSize.cy = 12.000000000000000000
+        inherited lytFormulario: TLayout
+          Padding.Left = 10.000000000000000000
+          Padding.Top = 10.000000000000000000
+          Padding.Right = 10.000000000000000000
+          Padding.Bottom = 10.000000000000000000
+          Size.Width = 778.000000000000000000
+          Size.Height = 478.000000000000000000
+        end
+      end
+    end
+  end
+end

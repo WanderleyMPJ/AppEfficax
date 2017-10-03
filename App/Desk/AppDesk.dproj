@@ -365,6 +365,7 @@
         <DCCReference Include="Class\Classe.CItem.pas"/>
         <DCCReference Include="Class\Classe.Produto.pas"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <DCCReference Include="Conection\dm.Connection.pas">
             <Form>dmConnection</Form>
             <FormType>dfm</FormType>
@@ -378,6 +379,8 @@
 >>>>>>> parent of 6157654... 22/09/2017
 =======
 >>>>>>> parent of 975c066... 19/09
+=======
+>>>>>>> parent of 5e66f97... 29/09/2017
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -445,6 +448,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
                     <Platform Name="Android">
                         <RemoteName>splash_image.png</RemoteName>
@@ -461,6 +465,11 @@
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule">
                     <Platform Name="iOSSimulator">
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+                <DeployFile LocalName="Android\Debug\libAppDesk.so" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteName>libAppDesk.so</RemoteName>
+>>>>>>> parent of 5e66f97... 29/09/2017
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -472,7 +481,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <DeployFile LocalName="Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+=======
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
+>>>>>>> parent of 5e66f97... 29/09/2017
 =======
                 <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
 >>>>>>> parent of 5e66f97... 29/09/2017

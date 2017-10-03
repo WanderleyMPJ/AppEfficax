@@ -122,6 +122,7 @@ type
     ListBoxHeader1: TListBoxHeader;
     Label26: TLabel;
 <<<<<<< HEAD
+<<<<<<< HEAD
     ListBoxItem14: TListBoxItem;
     edtCdIbge: TEdit;
     Label4: TLabel;
@@ -131,6 +132,8 @@ type
 >>>>>>> parent of 5e66f97... 29/09/2017
 =======
 >>>>>>> parent of 6157654... 22/09/2017
+=======
+>>>>>>> parent of 5e66f97... 29/09/2017
     procedure spbEndClick(Sender: TObject);
     procedure spbEndeClick(Sender: TObject);
     procedure spbDocClick(Sender: TObject);
